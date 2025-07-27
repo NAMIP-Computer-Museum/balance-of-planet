@@ -22,10 +22,11 @@ But I hate selling myself, so the whole thing quietly died."*
 There was also a crowdfunding attempt to make it freely available online.
 
 Note the original game can actually be played online through emulation on internet archive
-* Original MacOSe: https://archive.org/details/BalanceOfThePlanet
+* Original MacOS : https://archive.org/details/BalanceOfThePlanet
 * MSDOS (DOS BOX): https://archive.org/details/msdos_Balance_of_the_Planet_1990
 
 This repo explores the 2013 Java version which actually compiles without problems and how to make it available online in 2025.
+
 The approach selected so far is to translate to webassembly using https://cheerpj.com
 
 ## Content of repository
@@ -35,8 +36,8 @@ https://www.erasmatazz.com/library/source-code/index.html
 
 * original branch: unmodified Java source code bundled in an Eclipse project (build using JDK1.8 but more recent should work)
 * main branch: 
-** reworked version to include all resource in a single jar file
-** docs directory: contains executable resuling jar file and index.html that uses cheerPJ ( https://cheerpj.com/ ) which is the modern way to run Java inside a browser
+ * reworked version to include all resource in a single jar file
+ * docs directory: contains executable resuling jar file and index.html that uses cheerPJ ( https://cheerpj.com/ ) which is the modern way to run Java inside a browser
 
 ## Trying online (proof-of-concept)
 
