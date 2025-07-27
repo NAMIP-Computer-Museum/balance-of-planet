@@ -1,17 +1,18 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>CheerpJ test</title>
-    <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
-  </head>
-  <body>
-    <script>
-      (async function () {
-        await cheerpjInit();
-        cheerpjCreateDisplay(1024, 768);
-        await cheerpjRunJar("BOTP-RES.jar");
-      })();
-    </script>
-  </body>
+<head>
+  <meta charset="utf-8" />
+  <title>CheerpJ App</title>
+  <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
+</head>
+<body>
+  <script>
+    (async function () {
+      await cheerpjInit();
+      await cheerpjFetchResource("BOTP-RES.jar");     // 👈 force CheerpJ to load it properly
+      cheerpjCreateDisplay(1024, 768);                // optional for GUI apps
+      await cheerpjRunJar("BOTP-RES.jar");
+    })();
+  </script>
+</body>
 </html>
