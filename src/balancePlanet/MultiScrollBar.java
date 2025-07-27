@@ -18,6 +18,7 @@ import java.awt.Dimension;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseMotionListener;
+import java.net.URL;
 
 import javax.swing.Box;
 import javax.swing.BoxLayout;
@@ -170,9 +171,15 @@ public class MultiScrollBar extends Globals {
 		legendWidth[4]=61;
 		
 		JLabel pix=new JLabel();
-		if (difficultyLevel==beginnerLevel) pix.setIcon(new ImageIcon(directoryName+"GameImages/Subsidy3.jpg"));
-		if (difficultyLevel==intermediateLevel) pix.setIcon(new ImageIcon(directoryName+"GameImages/Subsidy4.jpg"));
-		if (difficultyLevel>=advancedLevel) pix.setIcon(new ImageIcon(directoryName+"GameImages/Subsidy5.jpg"));
+		// CP
+		String filename=directoryName+"GameImages/Subsidy3.jpg";
+		if (difficultyLevel==beginnerLevel) filename=directoryName+"GameImages/Subsidy3.jpg";
+		if (difficultyLevel==intermediateLevel) filename=directoryName+"GameImages/Subsidy4.jpg";
+		if (difficultyLevel>=advancedLevel) filename=directoryName+"GameImages/Subsidy5.jpg";
+		System.out.println("ICI: "+filename);
+		URL url = getClass().getResource(filename);
+		pix.setIcon(new ImageIcon(url));
+		
 		myShell.add(pix);
 		adjustable.add(myShell);
 		adjustable.add(outerBox);

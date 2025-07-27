@@ -15,6 +15,7 @@ import java.awt.event.AdjustmentListener;
 import java.awt.event.KeyEvent;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.net.URL;
 
 import javax.imageio.ImageIO;
 import javax.swing.Box;
@@ -557,7 +558,10 @@ public class SwingStuff extends Globals {
 		imageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 		imageLabel.setBackground(myBackgroundColor);
 		String fileName=getImageFileName(thisPage.title);
-		try { imageLabel.setIcon(new ImageIcon(fileName)); } 
+		try {
+			System.out.println("ICI: "+fileName);
+		    URL url= getClass().getResource(fileName);
+			imageLabel.setIcon(new ImageIcon(url)); } 
 		catch (Exception e) { System.out.println("could not find image: "+fileName); }
 		
 		mainTextPane.setText(padText(thisPage.mainText, thisPage.referenceText));

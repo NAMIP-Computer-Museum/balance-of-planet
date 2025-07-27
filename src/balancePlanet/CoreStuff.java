@@ -1,7 +1,9 @@
 package balancePlanet;
 
 import java.io.FileInputStream;
+import java.io.InputStream;
 import java.lang.reflect.Method;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
@@ -102,9 +104,12 @@ public class CoreStuff extends Globals {
 // ************************************************************	
 	private void readXMLFile() {
 		// conventional reading of main data file
-		FileInputStream fis=null;
+		InputStream fis=null;
 		String testName=directoryName+"Pages.xml";
-		try { fis = new FileInputStream(testName); }
+		System.out.println("ICI: "+testName);
+		try { 
+			fis = getClass().getResourceAsStream(testName); }
+//			fis = new InputStream(url); }
 		catch (Exception e) { 
 			e.printStackTrace(); 
 		}
@@ -222,9 +227,13 @@ public class CoreStuff extends Globals {
 // ************************************************************	
 	private void readBackgrounds() {
 		// conventional method for read the backgrounder information
-		FileInputStream fis=null;
+		InputStream fis=null;
 		String testName=directoryName+"Backgrounds.xml";
-		try { fis = new FileInputStream(testName); }
+		try { 
+			//fis = new FileInputStream(testName); 
+			System.out.println("ICI: "+testName);
+			fis = getClass().getResourceAsStream(testName);
+		}
 		catch (Exception e) { 
 			e.printStackTrace(); 
 		}

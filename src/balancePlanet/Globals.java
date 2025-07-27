@@ -36,7 +36,7 @@ public class Globals {
 	static public int difficultyLevel;		// game level
 	static double cumulativeCO2Emissions;
 
-	static String directoryName=System.getProperty("user.dir")+"/res/";
+	static String directoryName="/"; // System.getProperty("user.dir")+"/res/";
    // The primary data structure, contains all the data regarding each
 	//  of the factors that goes into the simulation. This data is
 	//  read from the file BotP.xml

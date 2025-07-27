@@ -1,6 +1,8 @@
 package balancePlanet;
 
 import java.awt.Color;
+import java.net.URL;
+
 import javax.swing.BoxLayout;
 import javax.swing.ImageIcon;
 import javax.swing.JFrame;
@@ -27,7 +29,10 @@ public class ConnectionsMap extends Globals {
 		if (difficultyLevel==advancedLevel)
 			fileName=directoryName+"GameImages/Level3Map.jpg";
 		JLabel bigImage=new JLabel();
-		try { bigImage.setIcon(new ImageIcon(fileName)); } 
+		try {
+			System.out.println("ICI: "+fileName);
+			URL fileURL = getClass().getResource(fileName);
+			bigImage.setIcon(new ImageIcon(fileURL)); } 
 		catch (Exception e) { System.out.println("could not find image: "+fileName); }
 		bigImage.setLocation(0,0);
 		thePanel.add(bigImage);

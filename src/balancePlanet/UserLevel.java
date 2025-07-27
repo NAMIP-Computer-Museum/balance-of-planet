@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.net.URL;
 
 import javax.swing.BoxLayout;
 import javax.swing.ButtonGroup;
@@ -34,7 +35,10 @@ public class UserLevel extends Globals {
 		readyToGo=false;
 		
 		JLabel splashScreen=new JLabel();
-		splashScreen.setIcon(new ImageIcon(directoryName+"GameImages/SplashScreen.jpg"));
+		String splashname=directoryName+"GameImages/SplashScreen.jpg";
+		URL splashUrl = getClass().getResource(splashname);
+		System.out.println("ICI: "+splashname);
+		splashScreen.setIcon(new ImageIcon(splashUrl));
 		splashScreen.setSize(splashScreen.getPreferredSize());
 		layeredPane.add(splashScreen);
 
@@ -57,7 +61,8 @@ public class UserLevel extends Globals {
 				if (intermediateButton.isSelected()) difficultyLevel=intermediateLevel;
 				if (advancedButton.isSelected()) difficultyLevel=advancedLevel;
 				String iString=directoryName+"GameImages/Level"+String.valueOf(difficultyLevel)+".jpg";
-				ImageIcon ii=new ImageIcon(iString);
+			    URL url= getClass().getResource(iString);
+				ImageIcon ii=new ImageIcon(url);
 				levelButton=new JButton(ii);
 				ss.mainFrame.remove(layeredPane);
 				levelButton.setMnemonic(KeyEvent.VK_ENTER);
