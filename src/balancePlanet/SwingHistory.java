@@ -4,6 +4,7 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Image;
+import java.net.URL;
 
 import javax.swing.ImageIcon;
 import javax.swing.JPanel;
@@ -24,9 +25,15 @@ public class SwingHistory extends Globals {
 	public SwingHistory(SwingStuff tsc) {
 		ss=tsc;
 		ss.setupJPanel(myPanel,false, 650,460, myBackgroundColor);
-		ImageIcon xAxisImageIcon=new ImageIcon(directoryName+"GameImages/XAxis5.png");
-		xAxisImage=xAxisImageIcon.getImage();   		
-		ImageIcon xAxisAlternateIcon=new ImageIcon(directoryName+"GameImages/BipolarXAxis5.png");
+		String xAxisFileName=directoryName+"GameImages/XAxis5.png"; // CP
+		System.out.println("RES: "+xAxisFileName);
+		URL url= getClass().getResource(xAxisFileName);
+		ImageIcon xAxisImageIcon=new ImageIcon(url);
+		xAxisImage=xAxisImageIcon.getImage();
+		String xAxisAltFileName=directoryName+"GameImages/BipolarXAxis5.png"; // CP		
+		System.out.println("RES: "+xAxisAltFileName);
+		URL alturl= getClass().getResource(xAxisFileName);
+		ImageIcon xAxisAlternateIcon=new ImageIcon(alturl);
 		xAxisAlternate=xAxisAlternateIcon.getImage(); 
 		ToolTipManager.sharedInstance().setInitialDelay(0);
 		ToolTipManager.sharedInstance().setDismissDelay(100000);
@@ -269,7 +276,10 @@ public class SwingHistory extends Globals {
 
 		// draw legend if need be
 		if (thisPage.isMultiColor) {
-			ImageIcon energyLegendIcon=new ImageIcon(directoryName+"GameImages/Legends/"+pgTitle+difficultyLevel+".png");
+			String filename = directoryName+"GameImages/Legends/"+pgTitle+difficultyLevel+".png"; // CP
+			System.out.println("RES: "+filename);
+			URL url= getClass().getResource(filename);
+			ImageIcon energyLegendIcon=new ImageIcon(filename);
 			multiColorLegend=energyLegendIcon.getImage();   		
 			g.drawImage(multiColorLegend,originX,originY+36,myBackgroundColor,null);			
 		}

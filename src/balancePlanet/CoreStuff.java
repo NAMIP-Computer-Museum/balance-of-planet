@@ -106,7 +106,7 @@ public class CoreStuff extends Globals {
 		// conventional reading of main data file
 		InputStream fis=null;
 		String testName=directoryName+"Pages.xml";
-		System.out.println("ICI: "+testName);
+		System.out.println("RES: "+testName);
 		try { 
 			fis = getClass().getResourceAsStream(testName); }
 //			fis = new InputStream(url); }
@@ -231,7 +231,7 @@ public class CoreStuff extends Globals {
 		String testName=directoryName+"Backgrounds.xml";
 		try { 
 			//fis = new FileInputStream(testName); 
-			System.out.println("ICI: "+testName);
+			System.out.println("RES: "+testName);
 			fis = getClass().getResourceAsStream(testName);
 		}
 		catch (Exception e) { 

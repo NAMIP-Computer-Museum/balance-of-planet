@@ -92,7 +92,10 @@ public class MultiScrollBar extends Globals {
 		
 		for (int i=0; (i<4); ++i) {
 			thumb[i]=new JLabel();
-   		thumb[i].setIcon(new ImageIcon(directoryName+"GameImages/Thumb.png"));
+			String filename=directoryName+"GameImages/Thumb.png"; // CP
+			System.out.println("RES: "+filename);
+			URL url= getClass().getResource(filename);
+   		thumb[i].setIcon(new ImageIcon(url));
    		clickOffset[i]=0;
    		thumb[i].addMouseListener(new MouseListener() {
 				public void mouseClicked(MouseEvent e) {
@@ -176,7 +179,7 @@ public class MultiScrollBar extends Globals {
 		if (difficultyLevel==beginnerLevel) filename=directoryName+"GameImages/Subsidy3.jpg";
 		if (difficultyLevel==intermediateLevel) filename=directoryName+"GameImages/Subsidy4.jpg";
 		if (difficultyLevel>=advancedLevel) filename=directoryName+"GameImages/Subsidy5.jpg";
-		System.out.println("ICI: "+filename);
+		System.out.println("RES: "+filename);
 		URL url = getClass().getResource(filename);
 		pix.setIcon(new ImageIcon(url));
 		

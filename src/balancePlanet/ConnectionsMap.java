@@ -30,7 +30,7 @@ public class ConnectionsMap extends Globals {
 			fileName=directoryName+"GameImages/Level3Map.jpg";
 		JLabel bigImage=new JLabel();
 		try {
-			System.out.println("ICI: "+fileName);
+			System.out.println("RES: "+fileName); // CP
 			URL fileURL = getClass().getResource(fileName);
 			bigImage.setIcon(new ImageIcon(fileURL)); } 
 		catch (Exception e) { System.out.println("could not find image: "+fileName); }

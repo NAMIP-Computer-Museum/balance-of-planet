@@ -377,7 +377,10 @@ public class SwingStuff extends Globals {
 		causesBox.add(Box.createHorizontalStrut(250));
 		effectsBox.add(Box.createHorizontalStrut(250));
 
-		dollarImage.setIcon(new ImageIcon(System.getProperty("user.dir")+"/res/GameImages/dollar.jpg"));
+		String filename=directoryName+"GameImages/dollar.jpg"; // CP
+		System.out.println("RES: "+filename);
+		URL url= getClass().getResource(filename);
+		dollarImage.setIcon(new ImageIcon(url));
 		
 		JPanel controlPanel=new JPanel();
 		controlPanel.setLayout(new BoxLayout(controlPanel, BoxLayout.X_AXIS));
@@ -559,7 +562,7 @@ public class SwingStuff extends Globals {
 		imageLabel.setBackground(myBackgroundColor);
 		String fileName=getImageFileName(thisPage.title);
 		try {
-			System.out.println("ICI: "+fileName);
+			System.out.println("RES: "+fileName); // CP
 		    URL url= getClass().getResource(fileName);
 			imageLabel.setIcon(new ImageIcon(url)); } 
 		catch (Exception e) { System.out.println("could not find image: "+fileName); }
@@ -647,7 +650,10 @@ public class SwingStuff extends Globals {
 	}
 // ************************************************************
 	public void drawBackgroundPanel(String title) {
-		JLabel imageLabel=new JLabel(new ImageIcon(directoryName+"BackgroundImages/"+title+".jpg")); 
+		String filename = directoryName+"BackgroundImages/"+title+".jpg"; // CP
+		System.out.println("RES: "+filename);
+		URL url= getClass().getResource(filename);
+		JLabel imageLabel=new JLabel(new ImageIcon(url)); 
 		imageLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
 		imageLabel.setBackground(myBackgroundColor);
 		valueLabel.setVisible(false);

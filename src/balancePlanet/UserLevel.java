@@ -37,7 +37,7 @@ public class UserLevel extends Globals {
 		JLabel splashScreen=new JLabel();
 		String splashname=directoryName+"GameImages/SplashScreen.jpg";
 		URL splashUrl = getClass().getResource(splashname);
-		System.out.println("ICI: "+splashname);
+		System.out.println("RES: "+splashname);
 		splashScreen.setIcon(new ImageIcon(splashUrl));
 		splashScreen.setSize(splashScreen.getPreferredSize());
 		layeredPane.add(splashScreen);
