@@ -1,0 +1,1788 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PageList xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Page Title="Taxes">
+		<Level>1</Level>
+		<MainText><![CDATA[
+		<p style="font-size:110%">This is where you set the taxes that provide revenue for your subsidies. Depending upon what level of the game you’re playing, you can have as many as five different taxes to levy.</p>
+		<p style="font-size:110%">These are all <a href="Pigovian Tax">Pigovian taxes</a>. They do two jobs at once: they discourage undesirable activities while at the same time generating revenue for your subsidies.</p>
+		<p style="font-size:110%">There’s no way to say for sure whether a tax is good or bad. Every tax has the benefit of raising revenue for you to work with. But every tax also has its cost: it harms economic growth, making everybody poorer. You just have to figure out the best balance between the costs and the benefits.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[]]></ReferenceText>
+		<Units></Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="350" y="18" color="clover"/>
+	</Page>
+	<Page Title="Subsidies">
+		<Level>1</Level>
+		<MainText><![CDATA[
+		<p style="font-size:110%">This is where you allocate the revenues you obtain from taxation. Depending on what level you’re playing, you can have as many as five different places to allocate this money. They are listed in the Effects box, and each is explained on its own page. Think carefully about how you allocate your money!</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[]]></ReferenceText>
+		<Units>of the Piggy Bank</Units>
+		<Format>Percent</Format>
+		<InitialValue>0.2</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="1050" y="18" color="yellow"/>
+	</Page>
+	<Page Title="Air Pollution Tax">
+		<Level>2</Level>
+		<CausalFactor>Taxes</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">This tax discourages releases of air pollution from burning fossil fuels. This has the beneficial effect of discouraging Coal Production and Oil Production, but it will also raise the Energy Price, which will lower the Global GDP. It doesn&rsquo;t have much effect on Natural Gas Production, becaues Natural Gas doesn&rsquo;t release much air pollution.</p>
+		<p style="font-size:110%">This tax, like all the others, will be phased in over the 58-year course of the game. In other words, in the first year, only 1/58th of the tax will be charged; in the second year, 2/58ths, and so on. You can&rsquo;t just hit the global economy with a completely new tax; you&rsquo;ve got to give the economy some time to adjust to the new tax system. Factories must be modified, new technologies developed, equipment made uneconomical by the tax must be replaced, and all of this takes time.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[Images:<br/><a href="http://technizzel.com/labyrinth/benjabbawy/what’s-more-crucial-the-carbon-tax-or-the-preventative-innovation/">smokestacks</a><br/><a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>dollars per ton</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="275" y="108" color="fern"/>
+	</Page>
+	<Page Title="Radioactive Emissions Tax">
+		<Level>2</Level>
+		<CausalFactor>Taxes</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">This tax discourages releases of radioactivity from nuclear power plants. As a consequence, fewer nuclear power plants will be built. It will not generate any appreciable amount of revenue for the Piggy Bank; its only purpose is to discourage the use of nuclear power.</p>
+		<p style="font-size:110%">This tax, like all the others, will be phased in over the 58-year course of the game. In other words, in the first year, only 1/58th of the tax will be charged; in the second year, 2/58ths, and so on. You can&rsquo;t just hit the global economy with a completely new tax; you&rsquo;ve got to give the economy some time to adjust to the new tax system. Factories must be modified, new technologies developed, equipment made uneconomical by the tax must be replaced, and all of this takes time.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[Images:<br/><a href="http://theintelhub.com/wp-content/uploads/2010/08/radiation11254496251.jpg">radiation symbol</a><br/><a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>dollars per Sievert</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>50.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="125" y="108" color="fern"/>
+	</Page>
+	<Page Title="Carbon Dioxide Tax">
+		<Level>1</Level>
+		<CausalFactor>Taxes</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">This tax discourages emissions of carbon dioxide from burning fossil fuels. Because coal releases more carbon for every bit of energy it makes, this tax will hit coal the hardest. It will also hit natural gas the least.</p>
+		<p style="font-size:110%">Because we release so much carbon dioxide, this tax will be your primary source of income for the Piggy Bank. It will generate billions and billions of dollars at first. But it will also discourage the use of these fossil fuels, speeding the transition to other forms of energy. When that transition is complete, you won&rsquo;t have any income from this tax.</p>
+		<p style="font-size:110%">A number of countries have already enacted carbon taxes. (There&rsquo;s some confusion, because some countries tax carbon, and some tax carbon dioxide. One molecule of carbon dioxide weighs almost 4 times more than one atom of carbon, so a <b>carbon</b> tax of $4 per ton is the same as <b>carbon dioxide</b> tax of $1 per ton. In this game, we tax carbon dioxide.)</p>
+		<p style="font-size:110%">Australia imposes a tax of $6 per ton; China has a tax of $0.40 per ton, and Europe&rsquo;s system of regulations amounts to about $20 per ton.</p>
+		<p style="font-size:110%">This tax, like all the others, will be phased in smoothly over the course of the game; the value you input will only be attained at the very end of the game. You can&rsquo;t just hit the global economy with a completely new tax; you&rsquo;ve got to give the economy some time to adjust to the new tax system. Factories must be modified, new technologies developed, equipment made uneconomical by the tax must be replaced, and all of this takes time. So plan ahead when you levy taxes!</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<br/><br/><br/><br/><br/><br/><br/><br/>Images:<br/><a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>dollars per ton</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>500.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="425" y="108" color="fern"/>
+	</Page>
+	<Page Title="Gasoline Tax">
+		<Level>2</Level>
+		<CausalFactor>Taxes</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">This tax discourages use of automobiles, and encourages the shift to public transportation and electric cars. Of course, it will also drive up the cost of transportation, inhibiting this crucial element of economic activity. This tax can generate a goodly amount of money for the Piggy Bank at first, but as people make the shift away from cars, it will generate less income.</p>
+		<p style="font-size:110%">This tax, like all the others, will be phased in over the 58-year course of the game. In other words, in the first year, only 1/58th of the tax will be charged; in the second year, 2/58ths, and so on. You can&rsquo;t just hit the global economy with a completely new tax; you&rsquo;ve got to give the economy some time to adjust to the new tax system. Factories must be modified, new technologies developed, equipment made uneconomical by the tax must be replaced, and all of this takes time.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[Images:<br/><a href="http://www.macon-bibb.com/CAUTION/">freeway</a><br/><a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>dollars per gallon</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>10.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="575" y="108" color="fern"/>
+	</Page>
+	<Page Title="Research Subsidy Percent">
+		<Level>1</Level>
+		<CausalFactor>Subsidies</CausalFactor>
+		<MainText><![CDATA[
+		<p style="font-size:110%">Have you ever wondered why we spend so much money on research that can&rsquo;t possibly help us with the problems we face? For example, the Europeans spend about a billion dollars a year for the Large Hadron Collider, a huge machine in Switzerland that smashes tiny subnuclear particles together at enormous velocities. This machine will tell us lots of interesting things about the smallest, most fundamental particles in the universe – but it won&rsquo;t feed a single hungry person, produce a drop of oil, or save a watt of energy.</p>
+		<p style="font-size:110%">Or how about the money we spend on astronomy research? Who cares about stars zillions of miles away or the structure of Jupiter or how many galaxies there are in the universe? Why do we spend billions of dollars on this junk?</p>
+		<p style="font-size:110%">The answer is just behind your nose. Why have you spent years learning all sorts of stupid stuff that won&rsquo;t help you get a job? Think of all the time you wasted learning reading, writing, and arithmetic – what employer is going to ask how good a reader you are or how fast you can write, and with a calculator you don&rsquo;t need no steenkin&rsquo; arithmetic. It would have been faster and easier if you just started off learning the stuff that would help you get a job, like engineering or restaurant management or how to be an astronaut. Right?</p>
+		<p style="font-size:110%">But there&rsquo;s a catch: before you can study any of the advanced things, you have to learn the basics. It would be impossible for you to learn the stuff you&rsquo;re studying this year if you didn&rsquo;t have the stuff you learned last year. Each year, you build your new learning on top of your previous learning. Can you imagine studying quantum mechanics in kindergarten?</p>
+		<p style="font-size:110%">Science is the same way: it builds up from the basics. Engineers can&rsquo;t build better integrated circuit chips for computers without the advanced science that the physicists come up with.</p>
+		<p style="font-size:110%">So why don&rsquo;t we put all our money on the research that will yield useful results, and not waste any money on research that doesn&rsquo;t produce anything useful? Because we don&rsquo;t know what will be useful and what won&rsquo;t be useful – it&rsquo;s pretty hard to figure out the value of what you <b>don&rsquo;t</b> know. Moreover, many of the most important discoveries were complete surprises coming from research that nobody thought was important.</p>
+		<p style="font-size:110%">For example, the key discovery behind computers was the transistor. The transistor was discovered because some scientists were curious about how atoms in a solid object connect with each other. At the time, it must have seemed like pretty stupid research, because nobody had any idea that it would ever yield any practical results. If people back then had said, "Let&rsquo;s spend our money on practical things like vacuum tubes!", then you wouldn&rsquo;t be enjoying the magnificent result of that research: this game!</p>
+		<p style="font-size:110%">So basic research is the foundation of applied research. We&rsquo;ve got to spend money on basic research to get the results needed for successful applied reseach. And since it&rsquo;s impossible to know what will come out of the laboratory, we just have to spread our bets around, funding all sorts of kooky ideas.</p>
+		<p style="font-size:110%">Remember, though, that research takes time. You can&rsquo;t just throw money at research and expect instant results.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.amazon.com/The-Republican-Science-Chris-Mooney/dp/B000WCNU44/ref=pd_rhf_se_shvl1">a book about politics and scientific research</a><br>]]></ReferenceText>
+		<Units>of the Piggy Bank</Units>
+		<Format>Percent</Format>
+		<InitialValue>0.2</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="750" y="108" color="tangerine"/>
+	</Page>
+	<Page Title="Solar Subsidy Percent">
+		<Level>1</Level>
+		<CausalFactor>Subsidies</CausalFactor>
+		<MainText><![CDATA[
+		<p style="font-size:110%">This money goes to subsidizing companies that make equipment for solar electricity. This reduces the effective cost of solar electricity, making it able to compete with fossil fuels.</p>
+		<p style="font-size:110%">Subsidies like this aren't meant to last forever. They're based on two ideas: the learning curve, and economies of scale. 
+		<p style="font-size:110%">Remember, this subsidy, like everything else, suffers from <a href="Diminishing Returns">diminishing returns</a>, so don&rsquo;t spend all your money here.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[Images:<br/><a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>of the budget</Units>
+		<Format>Percent</Format>
+		<InitialValue>0.2</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1.00</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="900" y="108" color="tangerine"/>
+	</Page>
+	<Page Title="Investment Fund Percent">
+		<Level>1</Level>
+		<CausalFactor>Subsidies</CausalFactor>
+		<MainText><![CDATA[
+		<p style="font-size:110%">This money all goes to the International Fund, which uses the money to finance projects all over the world that will increase productivity. These projects include dams, roads, canals, power plants, and other infrastructure projects.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>of the Piggy Bank</Units>
+		<Format>Percent</Format>
+		<InitialValue>0.2</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1.00</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="1050" y="108" color="tangerine"/>
+	</Page>
+	<Page Title="Education Subsidy Percent">
+		<Level>3</Level>
+		<CausalFactor>Subsidies</CausalFactor>
+		<MainText><![CDATA[
+		<p style="font-size:110%">This money is spent to improve schools in the Third World.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[Images:<br/><a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>of the Piggy Bank</Units>
+		<Format>Percent</Format>
+		<InitialValue>0.2</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1.00</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="1200" y="108" color="tangerine"/>
+	</Page>
+	<Page Title="Public Transport Subsidy Percent">
+		<Level>2</Level>
+		<CausalFactor>Subsidies</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">This subsidy is used to reduce the cost of building public transport systems. It encourages greater use of such systems, thereby reducing use of automobiles. Unfortunately, public transport is vulnerable to <a href="Diminishing Returns">diminishing returns</a>. How useful are public transport systems? Will a dollar spent here accomplish more than a dollar spent elsewhere? </p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[Images:<br/><a href="http://en.wikipedia.org/wiki/File:Constanta_pink_bus.jpg">bus</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/0/01/Barcelona_Tram_01.jpg">tram</a><br/>
+		<a href="http://3.bp.blogspot.com/_UUZ3bT-9JUg/S6x_D0W17hI/AAAAAAAAAW4/Qp9xoeDI-Hk/s1600/Bullet+Trains2.jpg">bullet train</a><br/>
+		<a href="http://antiadvertisingagency.com/wp-content/uploads/2007/07/bart-train.jpg">BART</a><br/>
+		<a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>of the Piggy Bank</Units>
+		<Format>Percent</Format>
+		<InitialValue>0.2</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1.00</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="1350" y="108" color="tangerine"/>
+	</Page>
+	<Page Title="Air Pollution Tax Income">
+		<Level>2</Level>
+		<CausalFactor>Air Pollution Tax</CausalFactor>
+		<CausalFactor>Air Pollution</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">This is the money you get from the Air Pollution Tax.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[Images:<br/><a href="http://technizzel.com/labyrinth/benjabbawy/what’s-more-crucial-the-carbon-tax-or-the-preventative-innovation/">smokestacks</a><br/><a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>billion dollars</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>10.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="275" y="200" color="asparagus"/>
+	</Page>
+	<Page Title="Radioactive Emissions Tax Income">
+		<Level>2</Level>
+		<CausalFactor>Radioactive Emissions Tax</CausalFactor>
+		<CausalFactor>Radioactive Emissions</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">This is the money you get from the Radioactive Emissions Tax.]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[Images:<br/><a href="http://theintelhub.com/wp-content/uploads/2010/08/radiation11254496251.jpg">radiation symbol</a><br/><a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>billion dollars</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>100.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="125" y="200" color="magenta"/>
+	</Page>
+	<Page Title="Carbon Dioxide Tax Income">
+		<Level>1</Level>
+		<CausalFactor>Carbon Dioxide Tax</CausalFactor>
+		<CausalFactor>Anthropogenic CO2 Emissions</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">This is the money you get from the Carbon Dioxide Tax.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<br/><br/><br/><br/><br/><br/><br/><br/>Images:<br/><a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>billion dollars</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>100.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="425" y="200" color="salmon"/>
+	</Page>
+	<Page Title="Gasoline Tax Income">
+		<Level>2</Level>
+		<CausalFactor>Gasoline Tax</CausalFactor>
+		<CausalFactor>Gasoline Use</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">This is the money you get from the Gasoline Tax.]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[Images:<br/><a href="http://www.macon-bibb.com/CAUTION/">freeway</a><br/><a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>billion dollars</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>10.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="575" y="200" color="maroon"/>
+	</Page>
+	<Page Title="Piggy Bank">
+		<Level>1</Level>
+		<CausalFactor>Air Pollution Tax Income</CausalFactor>
+		<CausalFactor>Radioactive Emissions Tax Income</CausalFactor>
+		<CausalFactor>Carbon Dioxide Tax Income</CausalFactor>
+		<CausalFactor>Gasoline Tax Income</CausalFactor>
+		<Coefficient name=" " initValue="1.0" minValue="1.0" maxValue="1.0" units=" "/>
+		<Coefficient name=" " initValue="1.0" minValue="1.0" maxValue="1.0" units=" "/>
+		<Coefficient name=" " initValue="1.0" minValue="1.0" maxValue="1.0" units=" "/>
+		<Coefficient name=" " initValue="1.0" minValue="1.0" maxValue="1.0" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">This is the income that you accrue every year from the taxes that you levy. This money is automatically spent each year on the subsidies you provide, in proportion to the percentages you have set. More taxes means more money for subsidies – but more taxes also bog down the economy!]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>billion</Units>
+		<Format>Currency</Format>
+		<InitialValue>1.0</InitialValue>
+		<MinimumValue>1.0</MinimumValue>
+		<MaximumValue>1000.0</MaximumValue>
+		<Multicolor>true</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="350" y="280" color="spring"/>
+	</Page>
+	<Page Title="Research Subsidy Amount">
+		<Level>1</Level>
+		<CausalFactor>Piggy Bank</CausalFactor>
+		<CausalFactor>Research Subsidy Percent</CausalFactor>
+		<MainText><![CDATA[
+		<p style="font-size:110%">Have you ever wondered why we spend so much money on research that can&rsquo;t possibly help us with the problems we face? For example, the Europeans spend about a billion dollars a year for the Large Hadron Collider, a huge machine in Switzerland that smashes tiny subnuclear particles together at enormous velocities. This machine will tell us lots of interesting things about the smallest, most fundamental particles in the universe – but it won&rsquo;t feed a single hungry person, produce a drop of oil, or save a watt of energy.</p>
+		<p style="font-size:110%">Or how about the money we spend on astronomy research? Who cares about stars zillions of miles away or the structure of Jupiter or how many galaxies there are in the universe? Why do we spend billions of dollars on this junk?</p>
+		<p style="font-size:110%">The answer is just behind your nose. Why have you spent years learning all sorts of stupid stuff that won&rsquo;t help you get a job? Think of all the time you wasted learning reading, writing, and arithmetic – what employer is going to ask how good a reader you are or how fast you can write, and with a calculator you don&rsquo;t need no steenkin&rsquo; arithmetic. It would have been faster and easier if you just started off learning the stuff that would help you get a job, like engineering or restaurant management or how to be an astronaut. Right?</p>
+		<p style="font-size:110%">But there&rsquo;s a catch: before you can study any of the advanced things, you have to learn the basics. It would be impossible for you to learn the stuff you&rsquo;re studying this year if you didn&rsquo;t have the stuff you learned last year. Each year, you build your new learning on top of your previous learning. Can you imagine studying quantum mechanics in kindergarten?</p>
+		<p style="font-size:110%">Science is the same way: it builds up from the basics. Engineers can&rsquo;t build better integrated circuit chips for computers without the advanced science that the physicists come up with.</p>
+		<p style="font-size:110%">So why don&rsquo;t we put all our money on the research that will yield useful results, and not waste any money on research that doesn&rsquo;t produce anything useful? Because we don&rsquo;t know what will be useful and what won&rsquo;t be useful – it&rsquo;s pretty hard to figure out the value of what you <b>don&rsquo;t</b> know. Moreover, many of the most important discoveries were complete surprises coming from research that nobody thought was important.</p>
+		<p style="font-size:110%">For example, the key discovery behind computers was the transistor. The transistor was discovered because some scientists were curious about how atoms in a solid object connect with each other. At the time, it must have seemed like pretty stupid research, because nobody had any idea that it would ever yield any practical results. If people back then had said, "Let&rsquo;s spend our money on practical things like vacuum tubes!", then you wouldn&rsquo;t be enjoying the magnificent result of that research: this game!</p>
+		<p style="font-size:110%">So basic research is the foundation of applied research. We&rsquo;ve got to spend money on basic research to get the results needed for successful applied reseach. And since it&rsquo;s impossible to know what will come out of the laboratory, we just have to spread our bets around, funding all sorts of kooky ideas.</p>
+		<p style="font-size:110%">Remember, though, that research takes time. You can&rsquo;t just throw money at research and expect instant results.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://en.wikipedia.org/wiki/Funding_of_science">Wikipedia article on research funding</a><br>
+		<a href="http://phys.org/news/2012-01-real-benefits-scientific.html">Research on the benefits of research</a><br>
+		<a href="http://www.washingtonpost.com/opinions/its-time-to-get-serious-about-science/2012/09/09/5b5c1472-f129-11e1-892d-bc92fee603a7_story.html">an editorial on the benefits of research</a><br>
+		<a href="http://www.nature.com/news/2010/100609/full/465682a.html">maybe research isn't so useful after all</a><br><br><br><br><br><br><br>
+		]]></ReferenceText>
+		<Units>billion</Units>
+		<Format>Currency</Format>
+		<InitialValue>0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="350" y="420" color="lime"/>
+	</Page>
+	<Page Title="Solar Subsidy Amount">
+		<Level>1</Level>
+		<CausalFactor>Piggy Bank</CausalFactor>
+		<CausalFactor>Solar Subsidy Percent</CausalFactor>
+		<MainText><![CDATA[
+		<p style="font-size:110%">This money goes to subsidizing companies that make equipment for solar electricity. This reduces the effective cost of solar electricity, making it able to compete with fossil fuels.</p>
+		<p style="font-size:110%">Subsidies like this aren't meant to last forever. They're based on two ideas: the learning curve, and economies of scale. 
+		<p style="font-size:110%">Remember, this subsidy, like everything else, suffers from <a href="Diminishing Returns">diminishing returns</a>, so don&rsquo;t spend all your money here.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[Images:<br/><a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>billion</Units>
+		<Format>Currency</Format>
+		<InitialValue>0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1.00</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="500" y="420" color="lime"/>
+	</Page>
+	<Page Title="Investment Fund Amount">
+		<Level>1</Level>
+		<CausalFactor>Piggy Bank</CausalFactor>
+		<CausalFactor>Investment Fund Percent</CausalFactor>
+		<MainText><![CDATA[
+		<p style="font-size:110%">This money all goes to the International Monetary Fund, an organization of 187 countries dedicated to fostering trade and growing the global economy. It uses the money to finance projects all over the world that will increase productivity.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>billion</Units>
+		<Format>Currency</Format>
+		<InitialValue>0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1.00</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="650" y="420" color="lime"/>
+	</Page>
+	<Page Title="Education Subsidy Amount">
+		<Level>3</Level>
+		<CausalFactor>Piggy Bank</CausalFactor>
+		<CausalFactor>Education Subsidy Percent</CausalFactor>
+		<MainText><![CDATA[
+		<p style="font-size:110%">This money is spent to improve schools in the Third World.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[Images:<br/><br/><a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>billion</Units>
+		<Format>Currency</Format>
+		<InitialValue>0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1.00</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="800" y="420" color="lime"/>
+	</Page>
+	<Page Title="Public Transport Subsidy Amount">
+		<Level>2</Level>
+		<CausalFactor>Piggy Bank</CausalFactor>
+		<CausalFactor>Public Transport Subsidy Percent</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">This subsidy is used to reduce the cost of building public transport systems. It encourages greater use of such systems, thereby reducing use of automobiles. Unfortunately, public transport is vulnerable to <a href="Diminishing Returns">diminishing returns</a>. How useful are public transport systems? Will a dollar spent here accomplish more than a dollar spent elsewhere? </p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[Images:<br/><a href="http://en.wikipedia.org/wiki/File:Constanta_pink_bus.jpg">bus</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/0/01/Barcelona_Tram_01.jpg">tram</a><br/>
+		<a href="http://3.bp.blogspot.com/_UUZ3bT-9JUg/S6x_D0W17hI/AAAAAAAAAW4/Qp9xoeDI-Hk/s1600/Bullet+Trains2.jpg">bullet train</a><br/>
+		<a href="http://antiadvertisingagency.com/wp-content/uploads/2007/07/bart-train.jpg">BART</a><br/>
+		<a href="http://www.ask.com/wiki/File:Open_Clip_Art_Library_Piggy_Bank.svg">piggy bank</a><br/>]]></ReferenceText>
+		<Units>billion</Units>
+		<Format>Currency</Format>
+		<InitialValue>0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1.00</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="950" y="420" color="lime"/>
+	</Page>
+	<Page Title="Educational Level">
+		<Level>3</Level>
+		<CausalFactor>Education Subsidy Amount</CausalFactor>
+		<CausalFactor>Global GDP</CausalFactor>
+		<Coefficient name="average spending" initValue="0.028" minValue="0.0" maxValue="1.0" units="%"/>
+		<Coefficient name="bang for buck" initValue="1" minValue="0.0" maxValue="1.0" units="%"/>
+		<MainText><![CDATA[<p style="font-size:110%">There are three basic levels of education: primary, secondary, and tertiary. Primary education provides literacy and arithmetic and is done in what Americans call elementary school; secondary education is done in high school; and tertiary education means college.</p>
+		<p style="font-size:110%">Right now, the global average educational level is only 6 years. In other words, the average human being has only about 6 years of education. This average is heavily skewed by the rich countries, in which almost everybody gets a high school diploma (meaning 12 years of education) and many go to college.</p>
+		<p style="font-size:110%">This means that there are many people in poor countries who get very little education. In some countries, girls get no education at all, and boys get only a few years of education.</p>
+		<p style="font-size:110%">Poor education hurts us in several ways. First, workers with more education are more productive than workers with less education. Thus, education increases economic output.</p>
+		<p style="font-size:110%">Second, study after study has shown that higher levels of education reduce overpopulation. Education is our best weapon against the exploding growth of human numbers.</p>
+		<p style="font-size:110%">Third, education forms the basis for science and technology to advance. A large supply of educated workers is what drives technological progress, which in turn drives economic growth.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[]]></ReferenceText>
+		<Units>years</Units>
+		<Format>Double</Format>
+		<InitialValue>6.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Average</ValueDisplayed>
+		<Location x="800" y="520" color="red"/>
+	</Page>
+	<Page Title="Scientific Progress">
+		<Level>1</Level>
+		<CausalFactor>Research Subsidy Amount</CausalFactor>
+		<CausalFactor>Educational Level</CausalFactor>
+		<Coefficient name="multiplier" initValue="1" minValue="0.0" maxValue="1.0" units=" "/>
+		<Coefficient name="divider" initValue="100" minValue="0.0" maxValue="1.0" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">Science has been progressing at an accelerating rate for at least the last hundred years. The number of scientists is growing, the number of papers they're publishing is growing, and the amount of money funding their research is growing, too.</p>
+		<p style="font-size:110%">Many different factors drive science forward, but they're difficult for a non-scientist to appreciate. First, you can dump the idea of the lone genius working in his lab, making earth-shattering discoveries. That just doesn't happen any more. Yes, there are certainly plenty of geniuses in the scientific world, but they are usually leading a team of scientists in some grand project.</p>
+		<p style="font-size:110%">Obviously, money is a major factor. Gone are the days when a Galileo could make his own lenses for a telescope to look at the sky. Nowadays, scientific projects cost a lot of money.</p>
+		<p style="font-size:110%">Some of that money comes from government grants, but most research money is provided by big corporations that expect to reap the benefits of their discoveries. That's because much science these days is immediately useful.</p>
+		<p style="font-size:110%">Another crucial factor is the educational infrastructure. You can't have great scientists without great universities, and you can't get great students for great universities without great high schools, and so on right down to kindergarten. The entire educational system has to be in good shape in order to train top-notch scientists.</p>
+		<p style="font-size:110%">Most of the science news stories you read are about physics and astronomy, but for the immediate future, the most economically valuable work is being done in materials science. This is a huge area covering how we make stuff. With nanotechnology, we make tiny things. We can make all sorts of interesting materials out of special arrangements of carbon atoms. 3-dimensional printing will make it possible to manufacture items one at a time.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[]]></ReferenceText>
+		<Units></Units>
+		<Format>Percent</Format>
+		<InitialValue>1.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="350" y="520" color="magenta"/>
+	</Page>
+	<Page Title="Energy Conservation">
+		<Level>1</Level>
+		<CausalFactor>Scientific Progress</CausalFactor>
+		<CausalFactor>Energy Price</CausalFactor>
+		<Coefficient name="divider" initValue="1" minValue="0.0" maxValue="1.0" units=" "/>
+		<Coefficient name="Price Elasticity of Demand" initValue="0.3" minValue="0.004" maxValue="0.008" units="% reduction in demand per % increase in price"/>
+		<Coefficient name="scaler" initValue="10" minValue="0.0" maxValue="10.0" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">Energy conservation remains the easiest, cheapest way to increase the supply of energy. The more <i>negawatts</i> that we DON&rsquo;T waste, the more <i>megawatts</i> we have left for useful purposes.</p>
+		<p style="font-size:110%">We waste so much energy that it&rsquo;s easy to find ways to conserve. <a href="Energy and Transportation">Transportation</a> is the easiest area to make fast progress in energy conservation. But we can also reduce energy consumption by reducing <a href="Retrofits">waste in our homes</a>. Lastly, some of the easiest and simplest ways to conserve energy are <a href="Behavioral Energy Conservation">behavioral changes</a>. Whatever else happens, the price of energy will continue rise each year, making energy conservation more important than ever.]]></MainText>
+		<FormulaText><![CDATA[Last Year&rsquo;s Value<br>&#09+ (<font color="Red">Subsidy Effectiveness</font><br>&#09 &nbsp &nbsp * Energy Conservation Budget<br>&#09  &nbsp &nbsp * Intellectual Progress Subsidy<br>&#09  &nbsp &nbsp * Piggy Bank)<br>]]></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.amazon.com/Homeowners-Handbook-Energy-Efficiency-Improvements/dp/1880120186/ref=sr_1_2?s=books&ie=UTF8&qid=1317097744&sr=1-2">a book for how to increase energy efficiency around the home</a><br/>
+		<a href="http://en.wikipedia.org/wiki/Fuel_efficiency_in_transportation">Wikipedia on transportation</a><br/>
+		<a href="http://en.wikipedia.org/wiki/Phase-out_of_incandescent_light_bulbs">Wikipedia on incandescent light bulbs</a>]]></ReferenceText>
+		<Units>of the 2011 level</Units>
+		<Format>Percent</Format>
+		<InitialValue>1.0</InitialValue>
+		<MinimumValue>1.0</MinimumValue>
+		<MaximumValue>10.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="350" y="620" color="orchid"/>
+	</Page>
+	<Page Title="Average MPG">
+		<Level>2</Level>
+		<CausalFactor>Energy Conservation</CausalFactor>
+		<Coefficient name="" initValue="1" minValue="0.0" maxValue="1.0" units=" "/>
+		<MainText><![CDATA[
+		<p style="font-size:110%">This represents the average mileage achieved by all vehicles on our roads: cars, pickup trucks, minivans, SUVs, and big trucks. There&rsquo;s a huge range of numbers here: big semis get only about 5 mpg; pickup trucks, minivans, and SUVs get about 17 mpg, while cars average about 22 mpg. Even within one category, there&rsquo;s a lot of variation: big Cadillacs get less than 15 mpg while the Toyota Prius gets better than 40 mpg. When we average it all together, we get about 20 mpg.</p>
+		<p style="font-size:110%">The most important factor in increasing mileage is the weight of the car. Lighter cars get better mileage than heavier cars. That&rsquo;s why most of the efforts to improve mileage focus on making the car lighter. Automobile designers have learned how to substitute plastics for steel, reducing the weight of the car.</p>
+		<p style="font-size:110%">However, this is all for naught if people demand bigger, more powerful (and therefore heavier cars). The average weight of American cars has been slowly increasing for the last 20 years; the average American car now weighs over two tons!</p>
+		<p style="font-size:110%">This is completely unnecessary: the average European car weighs a little more than one ton – just over half what an average American car weighs!</p>
+		<p style="font-size:110%">Don&rsquo;t fall for the old line that the heavier cars are <a href="Automobile Safety">safer</a>. In Europe, where cars are so much lighter than in American, the average fatality rate is 7 deaths per billion vehicle-km; the American fatality rate is 8.5 deaths per billion vehicle-km. For the same amount of driving, we kill more people. That&rsquo;s because heavier cars inflict greater damages in accidents.</p>
+		<p style="font-size:110%">The image on the left is real; it&rsquo;s from an advertisement in a magazine in 1942. See how much progress we&rsquo;ve made in 70 years?</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="tiffanyweber.wordpress.com/tag/advertising/>old magazine ad</a><br>]]></ReferenceText>
+		<Units>mpg</Units>
+		<Format>Double</Format>
+		<InitialValue>20.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Average</ValueDisplayed>
+		<Location x="900" y="620" color="tangerine"/>
+	</Page>
+	<Page Title="Energy Price">
+		<Level>1</Level>
+		<CausalFactor>Economic Growth</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">The price of energy affects every person on this planet. It contributes to the price of just about everything we build and everything we use. Anything that is transported by car, truck, train, ship, or airplane has its cost affected by the price of energy. The price of energy is determined by the supply of energy and the demand for it. The greater the supply, the lower the price. The greater the demand, the higher the price. However, improvements in drilling technology have steadily driven down the price of gasoline; adjusted for inflation, gasoline cost more in 1981 than it does today!</p>
+		<p style="font-size:110%">We use the price of gasoline as the indicator for the price of all forms of energy. Some forms are cheaper than gasoline, some forms are more expensive, but the price of gas is one number that most people already know. So the price of, say, coal, is expressed in this game as the price of the energy-equivalent amount of gasoline. This is a great simplification: different forms of energy are used in different ways, so it really isn&rsquo;t accurate to merge them all into a single price. But that much accuracy would be horribly confusing. We could be talking about BTUs, quads, joules, calories, cubic meters, short tons, long tons, metric tons, barrels, gallons, liters, kilowatt-hours... this stuff gets real messy real fast. So I&rsquo;m simplifying it all down to just one standard measure: the equivalent of one gallon of gasoline. You already know what that is.</p>
+		<p style="font-size:110%">Ultimately, the price of energy is set by the <a href="Free Markets">free markets</a>, which do a pretty good job of zeroing in on a fair price – but sometimes free markets can screw up, costing people hundreds of billions of dollars. The <a href="Resources And Price">price affects the supply of the resource</a>; a higher price allows us to dig deeper to get more of it.</p>
+		<p style="font-size:110%">The price of energy is a crucial factor in this game. A high price of energy inhibits economic growth, which has all sorts of nasty consequences. You want to keep the price of energy low, but the cheapest forms of energy are fossil fuels, which emit carbon dioxide, and carbon dioxide contributes to climate change. Climate change imposes costs that hurt the economy. Catch-22! You just have to figure out the best balance of energy sources.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.youtube.com/watch?v=20b_zVHmZG0">a YouTube video</a> explaining how supply responds to price</a><br>
+		<a href="http://www1.eere.energy.gov/vehiclesandfuels/facts/2005/fcvt_fotw364.html">history of gasoline prices</a><br>
+		<a href="http://en.wikipedia.org/wiki/Natural_gas_prices">history of natural gas prices</a><br>
+		]]></ReferenceText>
+		<Units>dollars per gallon</Units>
+		<Format>Double</Format>
+		<InitialValue>4.0</InitialValue>
+		<MinimumValue>2.0</MinimumValue>
+		<MaximumValue>1000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Average</ValueDisplayed>
+		<Location x="700" y="700" color="clover"/>
+	</Page>
+	<Page Title="Transportation Needs">
+		<Level>2</Level>
+		<CausalFactor>Global GDP</CausalFactor>
+		<CausalFactor>Energy Price</CausalFactor>
+		<Coefficient name="passenger-miles per $ of GDP" initValue="0.1" minValue="0.08" maxValue="0.12" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">Transportation is fundamental to civilization. People need to get from one place to another; most often it&rsquo;s from their residence to their job. The average American commutes 16 miles each workday. The average European travels only 9 miles to work. Japanese travel about 16 miles to their workplaces, but most take trains or buses.</p>
+		<p style="font-size:110%">The unit of measurement of transportation is the passenger-mile. A passenger-mile is racked up whenever one person is transported one mile. If a car carries two people five miles, then that trip racked up 10 passenger-miles. A train carrying 100 people over a distance of 10 miles racks up 1,000 passenger-miles.</p>
+		<p style="font-size:110%">All in all, each year people the world over travel about 5 trillion passenger-miles in cars; perhaps another half trillion by public transit, and another 2 trillion passenger-miles by air.</p>
+		<p style="font-size:110%">But that&rsquo;s not all: there&rsquo;s also a lot of freight being moved around. About 8 billion tons of stuff is transported by ship each year. On land, trains and trucks dominate freight transport; worldwide, total freight transport amounts to about 100 trillion ton-miles. All this freight transport has stoked the world&rsquo;s economy, adding greatly to human total wealth.</p>
+		<p style="font-size:110%">However, to keep this game simple, we&rsquo;ll just use passenger-miles as the indicator for all the transportation going on around the globe.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://en.wikipedia.org/wiki/Transport">Wikipedia overview of transportation</a><br>
+		<a href="http://safety.fhwa.dot.gov/ped_bike/docs/tph_1.pdf">a chapter about transportation and society</a><br><br><br><br><br><br><br>
+		<a href="http://3.bp.blogspot.com/_UUZ3bT-9JUg/S6x_D0W17hI/AAAAAAAAAW4/Qp9xoeDI-Hk/s1600/Bullet">train</a><br>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/7/75/5th-gen_Honda_Civic_Coupe.jpg">car</a><br>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Constanta_pink_bus.j">bus</a><br>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Bahrain_b747sp-21_a9c-hmh_arp.jpg/800px-Bahrain_b747sp-21_a9c-hmh_arp.jpg">airplane</a><br>]]></ReferenceText>
+		<Units>trillion passenger-miles</Units>
+		<Format>Double</Format>
+		<InitialValue>7.5</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="1100" y="520" color="eggplant"/>
+	</Page>
+	<Page Title="Public Transport">
+		<Level>2</Level>
+		<CausalFactor>Public Transport Subsidy Amount</CausalFactor>
+		<CausalFactor>Gasoline Tax</CausalFactor>
+		<Coefficient name="Subsidy Effectiveness" initValue="0.011" minValue="8.0" maxValue="14.0" units="passenger miles per dollar"/>
+		<MainText><![CDATA[<p style="font-size:110%">Half of humanity lives in urban areas, yet public transportation is available to a fraction of urban residents around the globe. Instead, most people rely on automobiles to get around in big cities. But cars consume more energy and emit more pollutants than public transportation systems like buses, trams, and subways. The more public transport we provide, the more energy will be saved and less pollution generated.</p>
+		<p style="font-size:110%">In 1823, in the French provincial town of Nantes, there was a shopkeeper named Messieur Omnes. He had a catchy name for his shop: "Omnes Omnibus", using his name in a Latin phrase meaning "Everything for Everybody". Cute, huh? Anyway, that year a Messieur Baudry set up a new business in Nantes using a set of <i>carrosses</i>, long horse-drawn carriages holding eight passengers; these vehicles ran regular scheduled routes through town. People could pay a fare and get on or off at any stop. The idea caught on, and the business prospered. The main terminus of all the routes was in the center of Nantes, just in front of Mr. Omnes&rsquo;s shop. There was no sign at the central terminal, so people referred to it as the thing that stopped at Omnes Omnibus; pretty soon that got shortened to just "the Omnibus thing", which later became just plain old "Omnibus". Then that got shortened down to the name we all use: bus. (By the way, the word <i>car</i> comes from the same word that gave rise to <i>carrosse</i>.)</p>		
+		<p style="font-size:110%">The humdrum bus is our most common form of public transport; worldwide, just under half of all passenger-miles of public transport are handled by buses.</p>
+		]]></MainText>
+		<FormulaText><![CDATA[Last Year&rsquo;s Value<br>&#09+ (<font color="Red">Subsidy Effectiveness</font><br>&#09 &nbsp &nbsp * GM Crop Research Budget<br>&#09  &nbsp &nbsp * Intellectual Progress Subsidy<br>&#09  &nbsp &nbsp * Piggy Bank)]]></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.publictransportation.org/Pages/default.aspx">an industry source</a><br>
+		<a href="http://www.uitp.org">the International Association of Public Transport</a><br>
+		<a href="http://www.britannica.com/EBchecked/topic/368374/mass-transit">long article in the Encyclopedia Brittanica</a><br>
+		<a href="https://www.uwgb.edu/dutchs/PSEUDOSC/MassTransit.HTM">why people don't use public transport</a><br><br><br><br><br><br><br>
+		<a href="http://en.wikipedia.org/wiki/File:Constanta_pink_bus.jpg">bus image</a><br/><a href="http://upload.wikimedia.org/wikipedia/commons/0/01/Barcelona_Tram_01.jpg">tram image</a><br/><a href="http://3.bp.blogspot.com/_UUZ3bT-9JUg/S6x_D0W17hI/AAAAAAAAAW4/Qp9xoeDI-Hk/s1600/Bullet+Trains2.jpg">bullet train image</a><br/><a href="http://antiadvertisingagency.com/wp-content/uploads/2007/07/bart-train.jpg">BART image</a><br/>]]></ReferenceText>
+		<Units>trillion passenger miles</Units>
+		<Format>Double</Format>
+		<InitialValue>0.5</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>5000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="950" y="520" color="grape"/>
+	</Page>
+	<Page Title="Electric Car Use">
+		<Level>2</Level>
+		<CausalFactor>Transportation Needs</CausalFactor>
+		<CausalFactor>Public Transport</CausalFactor>
+		<CausalFactor>Energy Price</CausalFactor>
+		<CausalFactor>Gasoline Tax</CausalFactor>
+		<Coefficient name="Trigger Price" initValue="20.0" minValue="16.0" maxValue="24.0" units="dollars"/>
+		<MainText><![CDATA[<p style="font-size:110%">The idea of a car powered by electricity is nothing new: the first such cars were driving around more than a hundred years ago, and there are still lots of small vehicles (such as golf carts) powered by electricity. But there was always one killer problem with electric cars: short range. The batteries just didn&rsquo;t have enough oomph to get you very far. The electric motors were perfectly good, but the best batteries we had were lead-acid batteries (like the one in your gasoline-powered car), which weigh a ton and don&rsquo;t hold that much electricity.</p>
+<p style="font-size:110%">You see, what&rsquo;s important is not just how much juice a battery holds; how much it weighs is also important, because a heavy battery slows down a car. So we measure the value of a battery by how much energy it can store per pound of battery.</p>
+<p style="font-size:110%">A lead-acid battery has an energy density of 45 kilojoules per pound. By contrast, regular gasoline has about 20 MEGAjoules per pound: 500 times as much as a lead-acid battery! To put it another way, a gallon of gasoline weighs about 6 pounds; if you wanted lead-acid batteries that could take you as far as a gallon of gasoline, they&rsquo;d weight about 3000 pounds! That&rsquo;s why electric cars using lead-acid batteries just aren&rsquo;t practical.<p>
+<p style="font-size:110%">However, over the last few decades, we&rsquo;ve started to see some big leaps in battery technology. Nickel-metal hydride batteries, at about 110 kilojoules per kilogram, are nearly 3 times better than lead-acid batteries. Even better are lithium-ion batteries with energy densities of about 300 kilojoules per pound. With lithium-ion batteries, you need only about 400 pounds of battery to get you as far as a gallon of gasoline. An improved version, the lithium-polymer (Li-poly) battery, is slightly more efficient but costs much more at this time. Finally, a number of new technologies are being developed, the most exciting of which is the lithium-air battery, which has the same energy density as gasoline!<p>
+<p style="font-size:110%">Do not forget, however, the First Rule of Technological Progress: ‟There&rsquo;s always a catch.” There are a lot of catches to keep in mind with these advanced battery technologies. One catch concerns recharging times. It takes five minutes to get your gas tank refilled at a gas station; batteries can take several hours to recharge. Another catch attends lithium-polymer batteries: if punctured or short-circuited, they can catch fire. This would not be good in an accident. Also, some of these batteries are pretty expensive. The costs are coming down as we build more and more of them – this is a very common experience in high-technology.<p>
+<p style="font-size:110%">As of early 2013, there are a dozen commercially available electric cars. The four-seat Nissan Leaf is the oldest, costs $30,000, and has a range of about 75 miles on a single charge. In America the average trip taken in cars is only about ten miles, so the short range of the Leaf is a problem only for long trips. Its ideal use would be for commuting to work or for shopping trips – which constitute the great majority of trips people take in cars. At the end of the day, you just plug it into the socket in your garage and let it recharge overnight.<p>
+<p style="font-size:110%">The Chevrolet Volt is trickier to describe. It&rsquo;s an all-electric car for the first 35 miles; once the battery runs down, a gasoline engine kicks in to recharge the battery. Thus, the Volt is a hybrid of an all-electric car and a regular hybrid; it&rsquo;s sometimes called a ‟plug-in hybrid”. Its gas mileage depends heavily on your driving patterns. If all your trips are less than 35 miles, then you&rsquo;ll never need to use the gasoline engine, getting all your energy from the electric plug (and electricity is a cheaper energy source than gasoline). However, at $40,000, the Volt is pretty expensive.<p>
+<p style="font-size:110%">The Tesla Model S is a luxury sports car that is all-electric. It costs about $60,000 and gets a range of 160 miles on a single charge.</p>
+<p style="font-size:110%">Mitsubishi sells the i-MiEV for abotu $30,000; it's a tiny car with a range of 62 miles. Ford has released its electric Focus car for $40,000, with a range of 76 miles.</p>
+<p style="font-size:110%">We're seeing more and more electric cars appearing in showrooms. The price is coming down; there's no question that electric cars are the future of transportation.</p>
+]]></MainText>
+		<ReferenceText><![CDATA[<a href="Electric Cars">more on electric cars</a><br><br><br><br><br><br>
+		
+		<a href="http://www.adelman.com/cars/ev1.jpg">electric car photo</a><br/>]]></ReferenceText>
+		<Units>trillion passenger miles</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0001</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>5000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="900" y="720" color="cyan"/>
+	</Page>
+	<Page Title="Gasoline Use">
+		<Level>2</Level>
+		<CausalFactor>Transportation Needs</CausalFactor>
+		<CausalFactor>Energy Price</CausalFactor>
+		<CausalFactor>Gasoline Tax</CausalFactor>
+		<CausalFactor>Public Transport</CausalFactor>
+		<CausalFactor>Electric Car Use</CausalFactor>
+		<CausalFactor>Average MPG</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">As people grow richer, they start to enjoy the material benefits of that wealth. One of those benefits is automobile ownership. All over the world, millions of people who could not afford cars are saving up enough money to purchase their first car. Because of this, traffic congestion is increasing all over the planet, and demand for gasoline is increasing by leaps and bounds.</p>
+		<p style="font-size:110%">Gasoline is a great fuel because it stores enormous amounts of energy in a small weight. A pound of gas can take your car five miles. Many other energy forms are so bulky or heavy that it just isn&rsquo;t practical to use them in vehicles. That&rsquo;s what makes gasoline so special, and that&rsquo;s why it&rsquo;s so difficult to replace.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://en.wikipedia.org/wiki/Gasoline">good old Wikipedia on gasoline</a><br>
+		<a href="http://www.eia.gov/energyexplained/index.cfm?page=gasoline_home">US Department of Energy explains gasoline</a><br>
+		<a href="">label</a><br>
+		<br><br><br><br><br><br>
+		<a href="http://www.macon-bibb.com/CAUTION/">freeway</a><br/>]]></ReferenceText>
+		<Units>BgOges</Units>
+		<Format>Double</Format>
+		<InitialValue>270.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="760" y="720" color="maroon"/>
+	</Page>
+	<Page Title="Coal Production">
+		<Level>1</Level>
+		<CausalFactor>Energy Price</CausalFactor>
+		<CausalFactor>Air Pollution Tax</CausalFactor>
+		<CausalFactor>Carbon Dioxide Tax</CausalFactor>
+		<Coefficient name="Maximum" initValue="10000" minValue="400000" maxValue="700000" units=""/>
+		<Coefficient name="Price at Maximum" initValue="9" minValue="-10" maxValue="0" units=""/>
+		<Coefficient name="Width" initValue="13" minValue="-10" maxValue="0" units=""/>
+		<MainText><![CDATA[<p style="font-size:110%">Coal is the most abundant form of readily accesible energy; it is also the dirtiest. The dirt starts at the beginning with the process of mining it.  There are two ways to get coal: by digging an <a href="Underground Mining">underground mine</a>, or by <a href="Strip Mining">strip mining</a> on the surface.</p>
+		<p style="font-size:110%">Only about 80% of the stuff in coal is carbon; the rest is other elements such as sulfur, nitrogen, hydrogen, and even tiny amounts of radioactive stuff. When we burn the coal, the carbon combines with oxygen to form carbon dioxide, a greenhouse gas. The other stuff forms all sorts of different chemicals like sulfur dioxide and nitrous oxides, which goes out the smokestack and into the atmosphere.</p>
+		<p style="font-size:110%">It is possible to reduce these emissions with technology. For example, an <i>electric precipitator</i> traps a lot of the particulates; there are also <i>scrubbers</i> that trap up to 90% of the sulfur dioxide and nitrous dioxide. However, even the cleanest coal-burning power plants still emit a lot of nasty stuff that gets mixed in with the coal. For example, there are tiny amounts of radioactive elements in coal; that stuff goes right up the smokestacks and into the air. Although the amount of radioactivity in a pound of coal is microscopic, we burn so much coal that a single coal plant releases about 5 tons of uranium into the air every year. 
+		<p style="font-size:110%">The burning of coal also generates millions of tons of <i>coal ash</i>, the leftover stuff that didn&rsquo;t burn and didn&rsquo;t go out the smokestack. It is put into huge dumps where it is supposed to stay forever, but rainwater leaches through it and carries away nasty chemicals that then mix with the groundwater to poison wells, streams, and rivers. When I was a student, I lived in an area in Missouri where there had been a lot of coal mining. The water coming from the wells for miles around stank; everybody had to drink bottled water and sometimes even bathing in it left you smelling like sulfur.</p>
+		<p style="font-size:110%">Coal is the biggest source of carbon dioxide emissions on the planet. It releases more carbon dioxide per <a href="Exajoule">Exajoule</a> of energy than any other source. <p style="font-size:110%">China is the world&rsquo;s largest producer of coal, which supplies it with 68% of all its electricity. The USA is the second-largest producer of coal; 45% of its electricity comes from coal-burning power plants.</p>
+		<p style="font-size:110%">But the supply of coal is humongous. The world has about 21,000 <a href="Exajoule">exajoules</a> worth of proven reserves of coal; we use less than 1% of that each year. There&rsquo;s probably a lot more coal that we haven&rsquo;t found yet. And there is a lot of work on new technologies for <a href="Clean Coal">cleaning up dirty coal</a> and for <a href="Coal Liquifaction">making gasoline out of coal.</a>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://en.wikipedia.org/wiki/Coal">Wikipedia</a><br/><a href="http://www.amazon.com/Big-Coal-Secret-Behind-Americas/dp/0618872248/ref=sr_1_2?s=books&ie=UTF8&qid=1317407084&sr=1-2">a good book on the coal industry</a><br/><a href="http://www.coalisclean.com/">a pro-coal website</a><br/><br/><br/><br/><br/><br/><br/><br/><a href="http://white-risse.com/Coal%20train.jpg">coal cars</a><br/>]]></ReferenceText>
+		<Units>BgOges</Units>
+		<Format>Double</Format>
+		<InitialValue>1326.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>5000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="350" y="850" color="gray"/>
+	</Page>
+	<Page Title="Oil Production">
+		<Level>1</Level>
+		<CausalFactor>Energy Price</CausalFactor>
+		<CausalFactor>Air Pollution Tax</CausalFactor>
+		<CausalFactor>Carbon Dioxide Tax</CausalFactor>
+		<Coefficient name="Maximum" initValue="2000" minValue="400000" maxValue="700000" units=""/>
+		<Coefficient name="Price at Maximum" initValue="5.75" minValue="-10" maxValue="0" units=""/>
+		<Coefficient name="Width" initValue="5" minValue="-10" maxValue="0" units=""/>
+		<MainText><![CDATA[<p style="font-size:110%">Oil is more useful than coal. Because it&rsquo;s a liquid, it can be piped around, which is cheaper than moving it around in trains and trucks as must be done with coal. It is chemically richer than coal, so it can be refined into different products for different uses, such as gasoline, kerosene, lubricating oil, and chemicals that are used in manufacturing. Most of our plastics are made from chemicals that are made in oil refineries. When we burn oil products such as gasoline or kerosene, fewer pollutants are generated than when we burn coal. Burning gasoline produces oxides of nitrogen. These oxides react with water in the lungs to create nitric acid, which is not a good chemical to have inside your lungs. Although oil is a versatile fossil fuel, we have only about 76 trillion gallons of gasoline equivalent</a> of oil left, and we&rsquo;re using about 2% of that each year – and our use of it is increasing.</p>
+		<p style="font-size:110%">150 years ago, oil was easy to get: Edwin Drake had to drill just 70 feet down to hit oil. Nowadays, the search for oil takes us deeper and deeper. Deep-sea platforms can work on wells in 5,000 of water, and can drill wells seven miles deep. This kind of drilling is, of course, very expensive; one deepwater drilling rig can cost $400 million. But as the price of oil rises higher and higher, drillers must go into deeper ocean waters and drill even deeper.</p>
+		<p style="font-size:110%">Of course, there&rsquo;s also the risk of environmentally destructive accidents. The <a href="http://en.wikipedia.org/wiki/Deepwater_Horizon">Deepwater Horizon accident</a> in 2010 killed 11 workers, destroyed the $400 million rig, and spilled about 200 million gallons of crude oil into the Gulf of Mexico. Total costs of the accident are expected to run to about $40 billion, much of which will eventually be passed on to consumers like you and me.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://science.howstuffworks.com/environmental/energy/oil-drilling.htm">Basics of oil drilling</a><br>
+		<a href="http://www.encapgroup.com/drilling/">a really good explanation of oil drilling</a><br>
+		<a href="http://www.livescience.com/4979-oil-drilling-risks-rewards.html">risks and rewards of oil drilling</a><br>
+		<a href="http://en.wikipedia.org/wiki/Deepwater_Horizon_oil_spill">The Deepwater Horizon oil spill</a><br>
+		<a href="http://www.bp.com/sectionbodycopy.do?categoryId=41&contentId=7067505>BP&rsquo;s website about the oil spill</a><br><br><br><br><br><br><br><br>		
+		oil rig photo: EPA<br/>]]></ReferenceText>
+		<Units>BgOges</Units>
+		<Format>Double</Format>
+		<InitialValue>1300.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>10000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="500" y="850" color="lightgray"/>
+	</Page>
+	<Page Title="Natural Gas Production">
+		<Level>1</Level>
+		<CausalFactor>Energy Price</CausalFactor>
+		<CausalFactor>Carbon Dioxide Tax</CausalFactor>
+		<Coefficient name="Maximum" initValue="3000" minValue="400000" maxValue="700000" units=""/>
+		<Coefficient name="Price at Maximum" initValue="7" minValue="-10" maxValue="0" units=""/>
+		<Coefficient name="Width" initValue="8" minValue="-10" maxValue="0" units=""/>
+		<MainText><![CDATA[Because it consists almost exclusively of methane, natural gas is the cleanest fossil fuel. When methane burns, it produces only water and carbon dioxide. It is easy to pipe around and pretty safe to use. We can liquify it by cooling it way down; in liquified form, we can ship it anywhere. For most of the last century we obtained natural gas as a byproduct of oil drilling, and those supplies weren&rsquo;t large. But in the last ten years the development of <a href="fracking">fracking technology</a> has greatly increased our estimates of probable reserves. However, considerable controversy surrounds fracking technology.]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://en.wikipedia.org/wiki/Natural_gas">Wikipedia on natural gas</a><br>
+		<a href="http://www.naturalgas.org/">the natural gas industry&rsquo;s version of the situation</a><br>
+		<a href="http://205.254.135.7/naturalgas/">the government&rsquo;s version</a><br>
+		<a href="http://content.sierraclub.org/naturalgas">the Sierra Club&rsquo;s version</a><br><br><br><br><br><br><br><br>
+		<a href="http://images.fastcompany.com/upload/natural_gas_set_to_change_everything_about_fight_for_energy_independence-720907.jpg">gas</a><br/>]]></ReferenceText>
+		<Units>BgOges</Units>
+		<Format>Double</Format>
+		<InitialValue>985.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="650" y="850" color="tangerine"/>
+	</Page>
+	<Page Title="Nuclear Energy Production">
+		<Level>1</Level>
+		<CausalFactor>Energy Price</CausalFactor>
+		<CausalFactor>Radioactive Emissions Tax</CausalFactor>
+		<Coefficient name="Maximum" initValue="5000" minValue="200000" maxValue="700000" units=""/>
+		<Coefficient name="Price at Maximum" initValue="12" minValue="-10" maxValue="0" units=""/>
+		<Coefficient name="Width" initValue="20" minValue="-10" maxValue="0" units=""/>
+		<MainText><![CDATA[Nuclear power plants operate on the same principles as all other <a href="Thermal Power Plant">thermal power plants</a>. They have all the same basic parts, and the only difference is that the heat source is a nuclear reactor. The <a href="Nuclear Reactions">nuclear reactions</a> inside the reactor generator prodigious quantities of heat, and the power plant converts all that heat energy into electricity.</p>
+<p style="font-size:110%"> Nuclear energy produces about 5% of our total supply of energy. The world has huge supplies of uranium, enough to last us for hundreds of years. If we use <a href="Breeder Reactor">breeder reactor</a> technology, then our stock of uranium will last forever.</p>
+<p style="font-size:110%">Nuclear is certainly the most controversial energy source. People ask, "<a href="Nuclear Safety">Is it safe?</a>" They also worry about <a href="Rad Waste Disposal">how to store</a> radioactive waste. There are <a href="Anti-Nukes">some people</a>, though, who think they already know all the answers to these questions.]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.sierraclub.org/nuclear/">The Sierra Club on nuclear power</a><br>
+		<a href="http://www.ne.doe.gov/">The US government&rsquo;s Department of Nuclear Energy</a><br>
+		<a href="http://www.world-nuclear.org/">the nuclear industry&rsquo;s version</a><br>
+		<a href="http://web.mit.edu/nuclearpower/">an MIT study of the future of nuclear power</a><br>
+		<a href="http://www.ucsusa.org/nuclear_power/">The Union of Concerned Scientists, an anti-nuclear group</a><br>
+		<a href="http://www.westinghousenuclear.com/Community/WhatIsNuclearEnergy.shtm">another nuclear industry website</a><br><br><br><br><br><br><br><br>		
+		<a href="http://commons.wikimedia.org/wiki/File:Philippsburg2.jpg">nuclear plant</a><br/>]]></ReferenceText>
+		<Units>BgOges</Units>
+		<Format>Double</Format>
+		<InitialValue>227.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="200" y="850" color="strawberry"/>
+	</Page>
+	<Page Title="Solar Energy Production">
+		<Level>1</Level>
+		<CausalFactor>Energy Price</CausalFactor>
+		<CausalFactor>Solar Subsidy Amount</CausalFactor>
+		<Coefficient name="Linear Multiplier" initValue="3" minValue="400000" maxValue="700000" units=""/>
+		<Coefficient name="Exponential Multiplier" initValue="0.4" minValue="-10" maxValue="0" units=""/>
+		<Coefficient name="Subtractor" initValue="13.9" minValue="-10" maxValue="0" units=""/>
+		<MainText><![CDATA[<p style="font-size:110%">There are several forms of solar energy. The simplest and most practical is <a href="Solar Water Heating">solar water heating</a>, which has been around for decades and can provide hot water almost anywhere the sun shines.</p>
+		<p style="font-size:110%">A more high-tech form is <a href="Solar Cells">solar photovoltaic cells</a>; these are solid-state tiles that make electricity directly out of sunlight.</p>
+		<p style="font-size:110%">A third form of solar energy is called <a href="Concentrated Solar Thermal Energy">concentrated solar thermal energy</a>. This uses mirrors to concentrate sunlight on a target, heating it up so that it generates electricity.</p>
+		<p style="font-size:110%">There&rsquo;s even a fourth form of solar energy: <a href=Biomass">biomass</a>. You might think of this as "organic solar energy": we grow plants that use photosynthesis of sunlight to make their little plant bodies, then we burn that stuff to make heat in a thermal power plant. Or we collect the organic waste from other manufacturing – dead corn stalks, bark and sawdust from lumber mills, stuff like that – and burn it for the energy.</p>
+		<p style="font-size:110%">If solar energy is so great, howcum we haven&rsquo;t build lots and lots of solar energy stuff? There are two answers to this question. First, it&rsquo;s still a bit on the expensive side. The price of solar cells has been steadily falling and they&rsquo;ll soon be worthwhile in sunny regions. The second reason, though, has to do with <a href="Limits to Growth">natural limits on how fast an industry can grow</a>.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.spheralsolar.com/">Psst! Wanna buy some solar panels?</a><br>
+		<a href="http://www.rheem.com/products/solar_water_heating/">Perhaps I can interest you in a solar water heater?</a><br>
+		<a href="http://www.amazon.com/Solar-Water-Heating-Revised-Expanded-Comprehensive/dp/0865716684">Maybe a book about solar water heating?</a><br>
+		<a href="http://www.amazon.com/Solar-Electricity-Handbook-Installing-Photovoltaic/dp/1907670041/ref=pd_sim_b_1">or a book about solar electricity for your home?</a><br>
+		<a href="http://www.bronze-age-swords.com">No? then how about a bronze sword?"</a><br><br><br><br><br><br><br><br><br>		
+		Solar Array: <a href="http://commons.wikimedia.org/wiki/File:Applied_materials_solar_arrray3.jpg">(CC) Larry D. Moore</a><br>
+		<a href="http://www.cartoonclipartworld.com/sun/images/84001_500.gif">Sun image</a>]]></ReferenceText>
+		<Units>BgOges</Units>
+		<Format>Double</Format>
+		<InitialValue>0.91</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>100.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="800" y="850" color="yellow"/>
+	</Page>
+	<Page Title="Wind Energy Production">
+		<Level>1</Level>
+		<CausalFactor>Energy Price</CausalFactor>
+		<Coefficient name="Linear Multiplier" initValue="3" minValue="400000" maxValue="700000" units=""/>
+		<Coefficient name="Exponential Multiplier" initValue="0.35" minValue="-10" maxValue="0" units=""/>
+		<Coefficient name="Subtractor" initValue="0.8" minValue="-10" maxValue="0" units=""/>
+		<MainText><![CDATA[<p style="font-size:110%">Energy from the wind is at last becoming cost-effective in locations blessed with large amounts of wind. Already wind supplies about 11.4 billion gallons of gasoline equivalent of energy each year, and the amount is growing rapidly. For many years, wind power was too expensive to be worthwhile, but steady advances in the technology have brought the price down to the point where it is cost-effective in the best locations. In most locations, though, it is still not as cost-effective as coal, oil, natural gas, or nuclear power. As the price of wind energy continues to fall, and the prices of fossil fuels rise in response to environmental considerations and depletion of supply, wind energy will make a larger contribution to our energy mix.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://en.wikipedia.org/wiki/Wind_power">Wikipedia weighs in on wind</a><br>
+		<a href="http://www.wwindea.org/home/index.php/">wind energy industry association website"<a><br>
+		<a href="http://www.vestaselearning.com/">lots of cute mini-movies about wind energy</a><br>
+		<a href="http://www.windenergy.com/">Psst! Wanna buy a wind turbine for your home?</a><br>
+		<a href="http://www.caithnesswindfarms.co.uk/page4.htm">You think wind energy is perfectly safe?</a><br>
+		<a href="http://www.youtube.com/watch?v=-YJuFvjtM0s&feature=related">windmill accident video! Cool!</a><br><br><br><br><br><br><br><br>		
+		<a href="http://commons.wikimedia.org/wiki/File:Wind_Turbines.JPG">wind turbine</a><br/>]]></ReferenceText>
+		<Units>BgOges</Units>
+		<Format>Double</Format>
+		<InitialValue>11.4</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>100.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="950" y="850" color="spring"/>
+	</Page>
+	<Page Title="Geothermal Energy Production">
+		<Level>1</Level>
+		<CausalFactor>Energy Price</CausalFactor>
+		<Coefficient name="Linear Multiplier" initValue="5" minValue="400000" maxValue="700000" units=""/>
+		<Coefficient name="Exponential Multiplier" initValue="0.2" minValue="-10" maxValue="0" units=""/>
+		<Coefficient name="Subtractor" initValue="0" minValue="0" maxValue="0" units=""/>
+		<MainText><![CDATA[<p style="font-size:110%">Geothermal energy is obtained by drilling holes deep into the ground at locations where hot volcanic rock comes close to the surface. We pump water down one pipe, where it is heated to high temperatures by the rock, and steam comes out the other pipe. That steam drives big turbines that turn generators to make electricity. Geothermal energy is safe for the public; the worst that can happen is a pipe break that leaks lots of steam into the air. This might kill some workers who are too close but a few hundred feet away there would be no danger at all. Geothermal energy requires no fuel; once the plant has been built, it can produce electricity for decades; the only requirement is that the equipment be maintained and that – occasionally – new wells be drilled. The main weakness of geothermal energy is that there isn&rsquo;t much of it. In most places in the world, you have to dig miles and miles down to reach rocks hot enough to provide geothermal energy. That&rsquo;s too deep to be economical. But there are a surprising number of places where geothermal energy can be tapped without drilling too deeply. In the US, the biggest site is in California at "The Geysers" north of San Francisco; it generates about 750 MW of power day in and day out. There are also lots of geothermal power stations in the Philippines, Indonesia, Mexico, Italy, New Zealand, Iceland, and many other places.</p>
+		<p style="font-size:110%">It might be possible to utilize some of the recent improvements in oil drilling technology to expand the amount of geothermal energy we can tap into. There is much excitement over the possibility, but at the moment it remains only a possibility; nobody has actually built a working power plant using these advanced techniques.</p>
+		<p style="font-size:110%">There&rsquo;s a second kind of geothermal energy: geothermal heating and cooling. It&rsquo;s just like a regular heat pump, but with one big difference: a heat pump moves heat from your house to the outside air or vice versa. A geothermal system does the same thing, only it uses the soil. You bury lots of pipes underground and pump water through them. That water provides the heat for heating or absorbs the heat of your house for cooling. These systems are expensive but they save money over the long run. We have one in our house, and it works great.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.geysers.com/">Website for The Geysers, the biggest geothermal power plant in the world</a><br>
+		<a href="http://www.energysavers.gov/your_home/space_heating_cooling/index.cfm/mytopic=12640">a government page about geothermal heating and cooling</a><br>
+		<a href="http://www.eia.gov/kids/energy.cfm?page=geothermal_home-basics">a government site for kids about geothermal power</a><br>
+		<a href="http://www.waterfurnace.com/geothermal-heat-pumps.aspx">Psst! Wanna buy a geothermal heat system?</a><br>
+		<a href="http://www.amazon.com/Smart-Guide-Geothermal-Harvest-Heating/dp/0977372480/ref=pd_sim_b_2">a book about geothermal heating and cooling</a><br><br><br><br><br><br><br><br>
+		<a href="http://en.wikipedia.org/wiki/File:NesjavellirPowerPlant_edit2.jpg">geothermal plant</a><br/>]]></ReferenceText>
+		<Units>BgOges</Units>
+		<Format>Double</Format>
+		<InitialValue>11.37</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>10.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="1100" y="850" color="mocha"/>
+	</Page>
+	<Page Title="Hydro Energy Production">
+		<Level>1</Level>
+		<CausalFactor>Energy Price</CausalFactor>
+		<Coefficient name="Linear Multiplier" initValue="60" minValue="400000" maxValue="700000" units=""/>
+		<Coefficient name="Exponential Multiplier" initValue="0.1" minValue="-10" maxValue="0" units=""/>
+		<Coefficient name="Subtractor" initValue="0" minValue="0" maxValue="0" units=""/>
+		<MainText><![CDATA[<p style="font-size:110%">Hydroelectric power is one of the oldest forms of electrical generation. The best sites for hydroelectric power have already been used, so there isn&rsquo;t much room for expansion in rich countries. There are plenty of great sites for dams in poor countries. But even something as simple and clean as a hydroelectric dam has its own special problems. The lake formed by a dam can ruin the environment for local species. Fish that are unlucky enough to take a trip through the turbines get sliced and diced. There&rsquo;s also the little problem that towns often form along rivers – the same river valleys that are flooded by the reservoir when a new dam is built. So the cost of relocating all the people who lived along the river must be added to the cost of the dam.</p>
+		<p style="font-size:110%">A hydroelectric dam is the simplest form of electricity generation. The water from the top of the reservoir falls down a big tube inside the dam to the bottom, where it runs into <a href="Water Turbine">turbines</a> that spin from the force of the falling water and turn generators.</p>
+		<p style="font-size:110%">The amount of electricity you can generate with a hydroelectric dam depends on two things: how <b>much</b> water you put through the turbines every second, and how <b>far</b> the water falls from the top of the lake to the turbine. The ideal site for a dam is a deep canyon through which a big river flows, and the perfect example of this is Hoover Dam, shown in the picture, which produces about 0.1 <a href="Billion Gallons of Gasoline Equivalent">BgOges</a>, even though it is a very high dam. By contrast, the Three Gorges Dam in China, which produces more electricity per year than any other dam, generates about 2 BgOges. Even though it&rsquo;s only half as tall as the Hoover Dam, it has 40 times as much water flowing through it.</p>
+		<p style="font-size:110%">If you&rsquo;re clever and determined, it&rsquo;s possible to get hydroelectricity even in odd places. For example, in the middle of the flat, flat plains of Nebraska sits the Loup Hydroelectric power plant. By carefully routing the water from a small river, engineers were able to build a plant that generates about 0.005 BgOges.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.visitingdc.com/las-vegas/hoover-dam-directions.asp">dam image</a><br/>]]></ReferenceText>
+		<Units>BgOges</Units>
+		<Format>Double</Format>
+		<InitialValue>81.8</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>30.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="1200" y="850" color="turquoise"/>
+	</Page>
+	<Page Title="Net Energy Production">
+		<Level>1</Level>
+		<CausalFactor>Coal Production</CausalFactor>
+		<CausalFactor>Oil Production</CausalFactor>
+		<CausalFactor>Natural Gas Production</CausalFactor>
+		<CausalFactor>Nuclear Energy Production</CausalFactor>
+		<CausalFactor>Solar Energy Production</CausalFactor>
+		<CausalFactor>Wind Energy Production</CausalFactor>
+		<CausalFactor>Geothermal Energy Production</CausalFactor>
+		<CausalFactor>Hydro Energy Production</CausalFactor>
+		<Coefficient name=" " initValue="1.0" minValue="0" maxValue="0" units=" "/>
+		<Coefficient name=" " initValue="1.0" minValue="0" maxValue="0" units=" "/>
+		<Coefficient name=" " initValue="1.0" minValue="0" maxValue="0" units=" "/>
+		<Coefficient name=" " initValue="1.0" minValue="0" maxValue="0" units=" "/>
+		<Coefficient name=" " initValue="1.0" minValue="0" maxValue="0" units=" "/>
+		<Coefficient name=" " initValue="1.0" minValue="0" maxValue="0" units=" "/>
+		<Coefficient name=" " initValue="1.0" minValue="0" maxValue="0" units=" "/>
+		<Coefficient name=" " initValue="1.0" minValue="0" maxValue="0" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">Energy drives civilization; its use is essential for almost everything we do. We use three basic forms of energy:</p>
+		<p style="font-size:110%"><b>Fossil fuels</b> These are coal, oil, and natural gas. We dig them out of the ground and burn them to get their energy.</p>
+		<p style="font-size:110%"><b>Renewable sources</b> These are solar, wind, geothermal, and hydroelectric. They last forever, but the machinery to harvest such energy is expensive.</p>
+		<p style="font-size:110%"><b>Nuclear</b> We've got enormous amounts of nuclear fuel, but the reactors we use to harness this energy are expensive.</p>
+		<p style="font-size:110%">There are three basic ways in which we use energy:</p>
+		<p style="font-size:110%">Electrical energy is the most versatile form of energy. We use electricity to light our homes, to heat and cool them, and to run countless machines – including the computer you're using right now. Electricity use is closely correlated with economic growth. In the USA in the past, every extra kilowatt hour of electricity use, costing about $0.10, was matched by economic growth of about $0.50. We can't know how much of this is cause and how much is effect, but one thing is certain: there's a 5:1 ratio between economic growth and growth of electricity use.</p>
+		<p style="font-size:110%">Oil is used mostly to power our trains, planes, ships, and cars. It's the best form of energy for transportation because it has the most energy per pound. But it is now the most expensive overall form of energy.</p>
+		<p style="font-size:110%">Lastly, we use some energy to make heat: to warm our buildings or for industrial processes like melting steel or making plastics.</p>
+		<p style="font-size:110%">For this game I have mooshed them all these uses together into one big mass. If you'd like to see a more realistic version of how energy moves around in the USA, take a lot at <a href="https://flowcharts.llnl.gov">these graphs</a> from Lawrence Livermore Laboratory. Be sure to expand them to full size so you can see the details.]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.forbes.com/2008/11/05/global-energy-map-biz-cx_jg_1105energy_map.html">a nice interactive map</a><br><a href="http://www.wolframalpha.com/input/?i=global+coal+energy+consumption%2C+petroleum+energy+consumption%2C+natural+gas+energy+consumption">Wolfram Alpha can show you all the graphs</a><br><a href="http://www.globalqbtu.com/wp/wp-content/uploads/Doc5/Global%20Energy%20Overview.pdf">a slide show about where energy comes from and where it goes</a><br>]]></ReferenceText>
+		<Units>BgOges</Units>
+		<Format>Double</Format>
+		<InitialValue>3790.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>10000.0</MaximumValue>
+		<Multicolor>true</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="700" y="1000" color="teal"/>
+	</Page>
+	<Page Title="Air Pollution">
+		<Level>2</Level>
+		<CausalFactor>Coal Production</CausalFactor>
+		<CausalFactor>Oil Production</CausalFactor>
+		<CausalFactor>Gasoline Use</CausalFactor>
+		<Coefficient name="Air Pollution per EBGG Coal" initValue="0.125" minValue="0.001" maxValue="0.1" units="million tons per EBGG"/>
+		<Coefficient name="Air Pollution per EBGG Oil" initValue="0.025" minValue="0.001" maxValue="0.08" units="million tons per EBGG"/>
+		<Coefficient name="Air Pollution per EBGG Gasoline" initValue="0.0125" minValue="0.001" maxValue="0.08" units="million tons per EBGG"/>
+		<MainText><![CDATA[Coal generates, on average, about a 40,000 tons of sulfur dioxide for every <a href="Billion Gallons of Gasoline Equivalent">BgOge</a> of energy it produces. This sulfur dioxide reacts with water to form sulfuric acid. In other words, when you inhale sulfur dioxide, some of it reacts with the water in your lungs to make sulfuric acid, which is not a good thing for your lungs. The same thing happens when sulfur dioxide mixes with the dew forming on the leaves of plants, or mixes with the rain, resulting in "acid rain". The resulting increase in acidity is tiny, but it can alter critical chemical balances inside living things, causing many to die back.]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://woodperfected.files.wordpress.com/">sunset</a><br/>]]></ReferenceText>
+		<Units>million tons</Units>
+		<Format>Double</Format>
+		<InitialValue>192.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1000.0</MaximumValue>
+		<Multicolor>true</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="500" y="1000" color="salmon"/>
+	</Page>
+	<Page Title="Acid Rain">
+		<Level>2</Level>
+		<CausalFactor>Air Pollution</CausalFactor>
+		<Coefficient name="Air Pollution Acidity" initValue="0.06" minValue="0.04" maxValue="0.1" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">When sulfur dioxide mixes with water vapor in the air, it forms sulfuric acid. When nitrous oxides mix with water vapor in the air, they form nitric acid. When the rain containing this acid falls, it acidifies the soil, the lakes and the streams, killing large amounts of life. The acid never gets strong enough to actually burn anything -- you&rsquo;d never notice it yourself. But living things are closely adapted to their environments, and very small changes in the acidity of the soil or water can really screw up the complex chemical reactions that take place inside every living cell. It&rsquo;s not as if everything turns brown or drops dead the instant they&rsquo;re hit by a raindrop with any acid in it. The extra acidity works slowly, like a very weak poison that takes months or years to do its damage. But if it keeps on raining acid rain, eventually the living things start to die.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://en.wikipedia.org/wiki/Acid_rain">Wikipedia</a><br/>
+		<a href="http://www.lakescientist.com/learn-about-lakes/water-quality/acid-rain.html">Effects on Fish</a><br/>
+		<a href="http://www.adirondackcouncil.org/acrapub.pdf">Brochure</a><br/>
+		<a href="http://www.amazon.com/Acid-Rain-Our-Planet-Peril/dp/0736832947/ref=sr_1_2?s=books&ie=UTF8&qid=1316712899&sr=1-2">Book for Kids</a><br/>
+		<a href="http://www.amazon.com/Acid-Rain-Adirondacks-Environmental-History/dp/0801474248/ref=sr_1_6?s=books&ie=UTF8&qid=1316712964&sr=1-6">A more thorough book</a><br/><br/><br/><br/><br/><br/><br/><br/>Images:<br/>
+		<a href="http://en.wikipedia.org/wiki/File:Acid_rain_woods1.JPG">forest</a>]]></ReferenceText>
+		<Units>million tons</Units>
+		<Format>Double</Format>
+		<InitialValue>12</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="400" y="1100" color="grape"/>
+	</Page>
+	<Page Title="Healthy Wetlands">
+		<Level>2</Level>
+		<CausalFactor>Acid Rain</CausalFactor>
+		<Coefficient name="ruination coefficient" initValue=".0004" minValue="0.0" maxValue="1.0" units="square miles per ton"/>
+		<MainText><![CDATA[<p style="font-size:110%">Life thrives on water, and wetlands, where land and water merge, are hotbeds of life. Here insects teem, fish eggs hatch, birds nest, and amphibians abound. They used to be scorned, these marshes and swamps, and people often drained them to transform them into "useful" farmland. In the process, they unwittingly undermined the foundations of multiple ecosystems.</p>
+		<p style="font-size:110%">The astounding productivity of wetlands is due to the combination of plentiful water with readily available nutrients and warm temperatures. The shallow waters heat rapidly in the sun and the plants luxuriate in a perfect combination of water, sun, and minerals. Feeding on this explosion of plant life is a riot of creatures of all sizes. The mud coddles an infinite crowd of tiny creatures who provide the base of the food pyramid for many other creatures.</p>
+		<p style="font-size:110%">But wetlands are easily poisoned by human pollution. When our chemicals wipe out some of the species, the rest of the ecosystem veers wildly out of balance and quickly collapses. When the wetland ecosystem perishes, entire fisheries can no longer reproduce, and dozens of species of birds, robbed of their nesting grounds, are pummeled.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[]]></ReferenceText>
+		<Units>million square miles</Units>
+		<Format>Double</Format>
+		<InitialValue>2.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="200" y="1300" color="flora"/>
+	</Page>
+	<Page Title="Anthropogenic CO2 Emissions">
+		<Level>1</Level>
+		<CausalFactor>Coal Production</CausalFactor>
+		<CausalFactor>Oil Production</CausalFactor>
+		<CausalFactor>Natural Gas Production</CausalFactor>
+		<CausalFactor>Rainforest Clearing</CausalFactor>
+		<Coefficient name="carbon per BgOge of coal" initValue="0.016" minValue="0.01" maxValue="0.02" units="billion tons per BgOge"/>
+		<Coefficient name="carbon per BgOge of oil" initValue="0.009" minValue="0.008" maxValue="0.01" units="billion tons per BgOge"/>
+		<Coefficient name="carbon per BgOge of natural gas" initValue="0.008" minValue="0.007" maxValue="0.009" units="billion tons per BgOge"/>
+		<Coefficient name="carbon per square mile of forest" initValue="0.000064" minValue="0.00004" maxValue="0.00009" units="billion tons per square mile"/>
+		<MainText><![CDATA[<p style="font-size:110%">Anthropogenic CO2 emissions are those that are caused by people, such as the CO2 coming out of the exhaust pipes of cars. There are other kinds of CO2 emissions that aren&rsquo;t anthropogenic, such as the emissions from volcanic eruptions.</p>
+		<p style="font-size:110%">When carbon chemically combines with oxygen, it forms carbon dioxide (CO2) and releases energy in the form of heat. This chemical reaction is what we call "burning". There are some inflammable things that don&rsquo;t have any carbon in them, but most of the things that we burn contain lots of carbon. Wood, oil, natural gas, and coal are all composed of carbon (among other things), so when we burn any of these, we release carbon dioxide into the atmosphere. There is no way to burn carbon without making carbon dioxide.</p>
+		<p style="font-size:110%">And boy, do we burn carbon! All over the planet, millions of cars, trucks, planes, motorcycles, lawn tractors, bulldozers, and lawn mowers are burning carbon to make energy to move things. Some of the biggest emitters aren&rsquo;t vehicles of any kind: they&rsquo;re power plants that burn coal, oil, or natural gas.</p>
+		<p style="font-size:110%">Of course, we&rsquo;re not the only ones emitting carbon; in fact, our carbon emissions are much less than nature&rsquo;s. It&rsquo;s all part of the <a href="Carbon Cycle">carbon cycle</a> of the planet earth. Although our own emissions are smaller than nature&rsquo;s, earth was in balance before we started burning so much fossil fuel; we have tipped the balance upward.</p>
+		<p style="font-size:110%">One other thing: those smokestacks in the picture with all that belching smoke – they&rsquo;re not really belching carbon dioxide, because it&rsquo;s invisible. In fact, the "smoke" you see coming out of smokestacks is usually just water clouds. It&rsquo;s no different than the white stuff that you exhale on a freezing cold day. It&rsquo;s just plain old water, and it quickly evaporates into invisible water vapor. It is quite harmless. Most of the bad stuff is either invisible or a dark color.</p>
+		<p style="font-size:110%">So why did I use a photograph of smokestacks belching water instead of carbon dioxide? Because you can see it! What if I wrote all this in <span style="color:#E0E0E0">invisible ink?</span>]]></MainText>
+		<FormulaText><![CDATA[<font color="Red">carbon per BgOge of coal</font>&nbsp*&nbsp Coal Production<br>+&nbsp<font color="Red">carbon per BgOge of oil</font>&nbsp * &nbsp Oil Production<br>+&nbsp<font color="Red">carbon per BgOge of natural gas</font>&nbsp * &nbsp Natural Gas Production<br>]]></FormulaText>
+		<ReferenceText><![CDATA[
+		<a href="http://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere">Wikipedia</a><br/>
+		<a href="http://www.epa.gov/climatechange/emissions/co2.html">EPA home page about carbon dioxide in the atmosphere</a><br/>
+		<a href="http://co2now.org/">the latest news on carbon dioxide in the atmosphere</a><br/><br/><br/><br/><br/><br/><br/><br/>Images:<br/><a href="http://upload.wikimedia.org/wikipedia/en/thumb/0/07/74_Chevrolet_Corvette_Stingray-Millie_Migia_Red.jpg/800px-74_Chevrolet_Corvette_Stingray-Millie_Migia_Red.jpg">Corvette</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/2001-2004_Dodge_Grand_Caravan.jpg/800px-2001-2004_Dodge_Grand_Caravan.jpg">van</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Bahrain_b747sp-21_a9c-hmh_arp.jpg/800px-Bahrain_b747sp-21_a9c-hmh_arp.jpg">Boeing 747</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/CAT-D10N-pic001.jpg/800px-CAT-D10N-pic001.jpg">bulldozer</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Gmc.jpg/800px-Gmc.jpg">pickup truck</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Lada_Samara_2109_in_Kraków_%281%29.jpg/800px-Lada_Samara_2109_in_Kraków_%281%29.jpg">Lada</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Opel_Insignia_Sports_Tourer_20090314_rear-1.jpg/800px-Opel_Insignia_Sports_Tourer_20090314_rear-1.jpg">Opel</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Volvo_T_25.1.jpg/800px-Volvo_T_25.1.jpg">red tractor</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Vw_bus_t1_v_sst.jpg/800px-Vw_bus_t1_v_sst.jpg">VW bus</a><br/>
+		<a href="http://3.bp.blogspot.com/_q8wAlSFzjec/TQGnZXCWozI/AAAAAAAAAD4/MERX-Oo9WmU/s1600/cadillac-eldorado-classic.jpg">Cadillac</a><br/>
+		<a href="http://www.cpsc.gov/cpscpub/prerel/prhtml06/06577.jpg">lawn tractor</a><br/>
+		<a href="http://www.framingham.k12.ma.us/images/cameron_images/bus.jpg">school bus</a><br/>
+		<a href="http://lh3.ggpht.com/-qaoPiuA0gxk/Ssr6pdErMvI/AAAAAAAABjA/16a0dZs6LCw/dumptruck7.jpg">dump truck</a><br/>
+		<a href="http://www.archithings.com/wp-content/uploads/2009/03/john-deere-7530-premium-series-tractor-3-588x418.jpg">green tractor</a><br/>
+		<a href="http://www.scenicreflections.com/files/monster_truck_smart_Wallpaper_sky.jpg">miniature monster truck</a><br/>
+		<a href="http://www.flowers-like-people.com/wp-content/uploads/2011/06/Toro-lawn-mower-01.jpg">lawn mower</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/8/85/Triumph_T_110_650_cc_1954.jpg">motorcycle</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/7/75/5th-gen_Honda_Civic_Coupe.jpg">Civic</a><br/>
+		<a href="http://qazse.files.wordpress.com/2007/11/smoke-stacks3.jpg">Smokestacks</a><br/>
+		<a href="http://en.wikipedia.org/wiki/File:Diesel-smoke.jpg">Diesel image</a><br/>]]></ReferenceText>
+		<Units>billion tons</Units>
+		<Format>Double</Format>
+		<InitialValue>29.0</InitialValue>
+		<MinimumValue>20.0</MinimumValue>
+		<MaximumValue>1000.0</MaximumValue>
+		<Multicolor>true</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="500" y="1000" color="salmon"/>
+	</Page>
+	<Page Title="Induced CO2 Emissions">
+		<Level>1</Level>
+		<CausalFactor>Forest Fires</CausalFactor>
+		<CausalFactor>Permafrost Emissions</CausalFactor>
+		<Coefficient name="carbon released per square mile of forest" initValue="0.00006" minValue="0.00004" maxValue="0.00008" units="billion tons per square mile"/>
+		<Coefficient name=" " initValue="1" minValue="1" maxValue="1" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">When we cut down or burn down the forest, billions of tons of wood and leaves are converted into carbon dioxide. That carbon dioxide adds to the carbon dioxide that we&rsquo;re putting into the air by burning fossil fuels, making the problem of climate change even bigger.</p>
+		<p style="font-size:110%">The same thing happens when a forest dies because the climate has changed and it no longer gets as much rain as before. The trees all die, the leaves and wood rot, and they release carbon dioxide into the air.</p>
+		<p style="font-size:110%">As the polar regions warm up, the frozen ground there (called <i>permafrost</i>) warms up and melts. As it melts, it releases even more carbon dioxide. The carbon dioxide makes the earth warmer, which melts more permafrost, which releases more carbon dioxide... and we&rsquo;ve got a vicious circle!</p> 
+		<p style="font-size:110%">We cannot pin the blame for these emissions on any single corporation, and therefore collect carbon taxes on these emissions, but they still contribute to climate change. Once these things start happening, we start losing control of the carbon dioxide in our atmosphere.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://epa.gov/climatestudents/impacts/signs/permafrost.html">a simple description of permafrost</a><br><a href="http://www.newscientist.com/article/dn22549-arctic-permafrost-is-melting-faster-than-predicted.html">permafrost melting story</a><br><a href="http://www.unep.org/pdf/permafrost.pdf">A long, thorough report on permafrost</a><br><a href="http://en.wikipedia.org/wiki/Permafrost">would you believe Wikipedia has something about permafrost?</a>]]></ReferenceText>
+		<Units>billion tons</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>20.0</MinimumValue>
+		<MaximumValue>1000.0</MaximumValue>
+		<Multicolor>true</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="300" y="1550" color="ocean"/>
+	</Page>
+	<Page Title="Net CO2 Emissions">
+		<Level>1</Level>
+		<CausalFactor>Anthropogenic CO2 Emissions</CausalFactor>
+		<CausalFactor>Induced CO2 Emissions</CausalFactor>
+		<Coefficient name=" " initValue="1" minValue="1" maxValue="1" units=" "/>
+		<Coefficient name=" " initValue="1" minValue="1" maxValue="1" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">When carbon chemically combines with oxygen, it forms carbon dioxide and releases energy in the form of heat. This chemical reaction is what we call "burning". There are some inflammable things that don&rsquo;t have any carbon in them, but most of the things that we burn contain lots of carbon. Wood, oil, natural gas, and coal are all composed of carbon (among other things), so when we burn any of these, we release carbon dioxide into the atmosphere. There is no way to burn carbon without making carbon dioxide.</p>
+		<p style="font-size:110%">And boy, do we burn carbon! All over the planet, millions of cars, trucks, planes, motorcycles, lawn tractors, bulldozers, and lawn mowers are burning carbon to make energy to move things. Some of the biggest emitters aren&rsquo;t vehicles of any kind: they&rsquo;re power plants that burn coal, oil, or natural gas.</p>
+		<p style="font-size:110%">Of course, we&rsquo;re not the only ones emitting carbon; in fact, we our carbon emissions are much less than nature&rsquo;s. It&rsquo;s all part of the <a href="Carbon Cycle">carbon cycle</a> of the planet earth.</p>
+		<p style="font-size:110%">One other thing: those smokestacks in the picture with all that belching smoke – they&rsquo;re not really belching carbon dioxide, because it&rsquo;s invisible. In fact, the "smoke" you see coming out of smokestacks is usually just water clouds. It&rsquo;s no different than the white stuff that you exhale on a freezing cold day. It&rsquo;s just plain old water, and it quickly evaporates into invisible water vapor. It is quite harmless. Most of the bad stuff is either invisible or a dark color.</p>
+		<p style="font-size:110%">So why did I use a photograph of smokestacks belching water instead of carbon dioxide? Because you can see it! What if I wrote this in <span font: color="#FFFF">invisible</span> <span font: color="#EEEE">ink?</span>]]></MainText>
+		<FormulaText><![CDATA[<font color="Red">carbon per BgOge of coal</font>&nbsp*&nbsp Coal Production<br>+&nbsp<font color="Red">carbon per BgOge of oil</font>&nbsp * &nbsp Oil Production<br>+&nbsp<font color="Red">carbon per BgOge of natural gas</font>&nbsp * &nbsp Natural Gas Production<br>]]></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://en.wikipedia.org/wiki/Carbon_dioxide_in_Earth%27s_atmosphere">Wikipedia</a><br/>
+		<a href="http://www.epa.gov/climatechange/emissions/co2.html">EPA home page about carbon dioxide in the atmosphere</a><br/><a href="http://co2now.org/">the latest news on carbon dioxide in the atmosphere</a><br/><br/><br/><br/><br/><br/><br/><br/>Images:<br/><a href="http://upload.wikimedia.org/wikipedia/en/thumb/0/07/74_Chevrolet_Corvette_Stingray-Millie_Migia_Red.jpg/800px-74_Chevrolet_Corvette_Stingray-Millie_Migia_Red.jpg">Corvette</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/2001-2004_Dodge_Grand_Caravan.jpg/800px-2001-2004_Dodge_Grand_Caravan.jpg">van</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Bahrain_b747sp-21_a9c-hmh_arp.jpg/800px-Bahrain_b747sp-21_a9c-hmh_arp.jpg">Boeing 747</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/1/1e/CAT-D10N-pic001.jpg/800px-CAT-D10N-pic001.jpg">bulldozer</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Gmc.jpg/800px-Gmc.jpg">pickup truck</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Lada_Samara_2109_in_Kraków_%281%29.jpg/800px-Lada_Samara_2109_in_Kraków_%281%29.jpg">Lada</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Opel_Insignia_Sports_Tourer_20090314_rear-1.jpg/800px-Opel_Insignia_Sports_Tourer_20090314_rear-1.jpg">Opel</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Volvo_T_25.1.jpg/800px-Volvo_T_25.1.jpg">red tractor</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Vw_bus_t1_v_sst.jpg/800px-Vw_bus_t1_v_sst.jpg">VW bus</a><br/>
+		<a href="http://3.bp.blogspot.com/_q8wAlSFzjec/TQGnZXCWozI/AAAAAAAAAD4/MERX-Oo9WmU/s1600/cadillac-eldorado-classic.jpg">Cadillac</a><br/>
+		<a href="http://www.cpsc.gov/cpscpub/prerel/prhtml06/06577.jpg">lawn tractor</a><br/>
+		<a href="http://www.framingham.k12.ma.us/images/cameron_images/bus.jpg">school bus</a><br/>
+		<a href="http://lh3.ggpht.com/-qaoPiuA0gxk/Ssr6pdErMvI/AAAAAAAABjA/16a0dZs6LCw/dumptruck7.jpg">dump truck</a><br/>
+		<a href="http://www.archithings.com/wp-content/uploads/2009/03/john-deere-7530-premium-series-tractor-3-588x418.jpg">green tractor</a><br/>
+		<a href="http://www.scenicreflections.com/files/monster_truck_smart_Wallpaper_sky.jpg">miniature monster truck</a><br/>
+		<a href="http://www.flowers-like-people.com/wp-content/uploads/2011/06/Toro-lawn-mower-01.jpg">lawn mower</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/8/85/Triumph_T_110_650_cc_1954.jpg">motorcycle</a><br/>
+		<a href="http://upload.wikimedia.org/wikipedia/commons/7/75/5th-gen_Honda_Civic_Coupe.jpg">Civic</a><br/>
+		<a href="http://qazse.files.wordpress.com/2007/11/smoke-stacks3.jpg">Smokestacks</a><br/>
+		<a href="http://en.wikipedia.org/wiki/File:Diesel-smoke.jpg">Diesel image</a><br/>]]></ReferenceText>
+		<Units>billion tons</Units>
+		<Format>Double</Format>
+		<InitialValue>29.0</InitialValue>
+		<MinimumValue>20.0</MinimumValue>
+		<MaximumValue>1000.0</MaximumValue>
+		<Multicolor>true</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="450" y="1200" color="tangerine"/>
+	</Page>
+	<Page Title="Average Global Temperature">
+		<Level>1</Level>
+		<CausalFactor>Net CO2 Emissions</CausalFactor>
+		<CausalFactor>Snow Cover</CausalFactor>
+		<Coefficient name="forcing constant" initValue="0.003" minValue="0.001" maxValue="0.004" units="degrees per billion tons CO2"/>
+		<MainText><![CDATA[<p style="font-size:110%">As we pump more and more carbon dioxide into the atmosphere, the <a href="Greenhouse Effect">greenhouse effect</a> becomes stronger and stronger, and parts of the planet become warmer. The effect is strongest at the poles and weakest at the equator. However, the effects on climate show up all over the planet, as the global climate patterns shift due to the changing temperatures. This is called <a href="Climate Change">climate change</a>, and is the biggest environmental problem humankind has ever faced. Climate change is already causing <a href="Glaciers">glaciers</a> to melt, sea levels to rise, storms to become more violent, forest fires to increase in size and frequency, more <a href="Drought">droughts</a>, more heat waves, and more flooding.</p>
+		<p style="font-size:110%">Scientists have come up with some rather odd ideas for dealing with climate change. Some of these ideas are pretty wacko, but some might actually work. All of these ideas go under the name <a href="Geoengineering">geoengineering</a>.]]></MainText>
+		<FormulaText><![CDATA[Net CO2 Emissions * <font color="Red">forcing constant</font>]]></FormulaText>
+		<ReferenceText><![CDATA[
+		<a href="http://www.realclimate.org/">Real Climate</a>, the best website about climage change<br/>
+		<a href="http://www.ipcc.ch/publications_and_data/publications_and_data_reports.shtml">The IPCC reports, which are summaries of the best known science about climate change.</a><br/>
+		]]></ReferenceText>
+		<Units>degrees Fahrenheit</Units>
+		<Format>Double</Format>
+		<InitialValue>57.0</InitialValue>
+		<MinimumValue>50.0</MinimumValue>
+		<MaximumValue>100.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="525" y="1300" color="red"/>
+	</Page>
+	<Page Title="Sea Level">
+		<Level>3</Level>
+		<CausalFactor>Average Global Temperature</CausalFactor>
+		<Coefficient name="inches per degree" initValue="5" minValue="4.0" maxValue="6.0" units="inches per degree"/>
+		<MainText><![CDATA[<p style="font-size:110%">As the greenhouse effect slowly warms the planet, ice at the poles and in glaciers melts, putting more water into the oceans. Also, the increase in water temperatures causes seawater to expand slightly, pushing the sea level even higher. In the last 100 years, sea level has risen by nearly eight inches, and is now rising at a rate of more than an inch per decade. It will probably rise much faster in the future.</p>
+		<p style="font-size:110%">You might think that this is not such a big deal. After all, if sea level rises by, say, two feet, how bad can that be? Most beaches are at least two feet higher than the sea, and most coastal cities are at least 3 feet higher than the sea, so there's no problem, right?</p>
+		<p style="font-size:110%">Wrong! The danger is not that someday people in Miami will be using boats to get around. The danger comes from big storms. When Superstorm Sandy came ashore in New Jersey in late 2012, it drove a huge <i>storm surge</i> ahead of it. This storm surge was fifteen feet high in places. If it starts from a higher sea level, it will sweep further inland and wreak greater damage.</p>
+		<p style="font-size:110%">Another risk factor for rising sea level is salt water intrusion into coastal zones. This is especially destructive to the rich farmlands that lie on river deltas such as those of the Mississippi, the Nile, the Ganges, and the Yellow River. In the Nile delta alone, over 77 square miles of farmland will be destroyed by 2025, forcing half a million people out of their homes. ]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.ccchina.gov.cn/en/NewsInfo.asp?NewsId=7518">impact of sea level rise on Shanghai</a><br/>
+		<a href="http://epa.gov/climatechange/effects/coastal/index.html">The EPA&rsquo;s page on sea level rise</a><br/>
+		<a href="http://www.sciencedaily.com/releases/2009/03/090310104742.htm">a news story about sea level rise</a><br/>
+		Wanna see what sea level rise would look like in various places in the USA? Try<a href="http://csc.noaa.gov/digitalcoast/tools/slrviewer/"> this neat webpage<a> from the NOAA!<br/><br/><br/><br/><br/><br/><br/><br/>
+		
+		<a href="http://dailybayonet.com/wp-content/uploads/2011/05/new-amsterdam.jpg">New York image</a><br/>]]></ReferenceText>
+		<Units>inches above 2011</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>1000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="450" y="1450" color="blueberry"/>
+	</Page>
+	<Page Title="Flood Deaths">
+		<Level>3</Level>
+		<CausalFactor>Sea Level</CausalFactor>
+		<Coefficient name="Deaths per additional inch" initValue="10000" minValue="5000.0" maxValue="15000.0" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">There are three broad causes of flooding: excessive rainfall, rises in sea Level, and storm surges in hurricanes. These factors can combine to produce monster floods that kill thousands. The worst hit areas are low-lying river deltas such as in Bangladesh, the Nile delta in Egypt, and the Mississippi River delta. When hurricane Katrina struck New Orleans, the heavy rains and storm surge led to flooding that killed nearly 2,000 people and inflicted $80 billion in damages.</p>
+		<p><p style="font-size:110%">Every year, approximately 300,000 people around the world die from flooding. However, we count here only those whose deaths are likely due to the rise in sea level due to climate change or to intense rainfall caused by climate change.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://commons.wikimedia.org/wiki/File:Le_déluge_-_musée_de_beaux_arts_de_Nantes_20091017.jpg">painting</a><br/>]]></ReferenceText>
+		<Units>deaths</Units>
+		<Format>Integer</Format>
+		<InitialValue>0</InitialValue>
+		<MinimumValue>0</MinimumValue>
+		<MaximumValue>500000</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="450" y="1550" color="black"/>
+	</Page>
+	<Page Title="Snow Cover">
+		<Level>1</Level>
+		<CausalFactor>Average Global Temperature</CausalFactor>
+		<Coefficient name="sensitivity to temperature" initValue="0.01" minValue="0.005" maxValue="0.015" units="% cover lost per degree"/>
+		<MainText><![CDATA[<p style="font-size:110%">About 10% of the earth&rsquo;s surface is covered by snow or ice, which is so brilliantly white that it reflects away almost all of the sunlight that hits it. This helps keep the earth cool. However, if temperatures rise because of the greenhouse effect, some of that snow and ice will melt, leaving behind dark ground or ocean that absorbs more of the sun&rsquo;s light. This will add to the amount of heat absorbed by the earth, causing its temperature to rise.</p>
+		<p style="font-size:110%">This is what we call a "vicious circle". If the earth&rsquo;s temperature rises, it will melt snow, which will cause the temperature to rise even more! This is one of the dangers of climate change: the effect of human-emitted carbon dioxide is, in effect, amplified by the changes in ice cover.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.nature.com/news/arctic-snow-cover-shows-sharp-decline-1.11709">an article on Arctic snow cover</a><br>
+		<a href="http://earthobservatory.nasa.gov/GlobalMaps/view.php?d1=MOD10C1_M_SNOW">NASA animation of snow cover on the planet over the last 13 years</a><br><br><br><br><br><br><br>
+		<a href="http://www.iup.uni-bremen.de:8084/amsr/">map of Arctic sea ice</a><br/>
+		]]></ReferenceText>
+		<Units></Units>
+		<Format>Percent</Format>
+		<InitialValue>0.10</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.10</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="600" y="1450" color="ice"/>
+	</Page>
+	<Page Title="Permafrost Emissions">
+		<Level>1</Level>
+		<CausalFactor>Average Global Temperature</CausalFactor>
+		<Coefficient name="Sensitivity" initValue="3.0" minValue="1.0" maxValue="6.0" units="billion tons per degree"/>
+		<Coefficient name="Initiation Temperature" initValue="58.0" minValue="57.0" maxValue="62.0" units="degrees"/>
+		<MainText><![CDATA[<p style="font-size:110%">This is the single most dangerous element in the whole climate change situation. Permafrost is ground that has been permanently frozen. Just a little bit of the top melts during the summer, permitting a bit of grass to grow, but just below the soil level, it&rsquo;s frozen solid. When the grass dies, it doesn&rsquo;t rot like it does in regular climates; it&rsquo;s so cold that the bacteria and bugs that cause the grass to decay can&rsquo;t do much work before everything gets frozen again. So a dense layer of partly-decayed plant stuff builds up underground. Let this go on for thousands of years, and you get a deep frozen mass of organic matter, some of it in the form of carbon dioxide and some of it in the form of methane.<br>So long as the permafrost remains frozen, that layer stays where it is. But if it starts to warm up -- as it is doing even now -- then the permafrost will start to melt, and all that carbon dioxide and methane will be released into the atmosphere. Remember, carbon dioxide and methane are both greenhouse gases, so when they get into the air, they add to the strength of the greenhouse effect, and the earth gets warmer even faster.</p>
+		<p style="font-size:110%">This is a "vicious circle", just like the one we have with snow cover. It means that the effect of the carbon dioxide we emit is magnified by the melting of permafrost. In fact, it can lead to "runaway warming": even if we stopped releasing carbon dioxide, the emission from all that permafrost would continue to raise the temperature.<.p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.nytimes.com/2011/12/17/science/earth/warming-arctic-permafrost-fuels-climate-change-worries.html?_r=1">article on permafrost emissions</a><br>
+		<br><br><br><br><br><br><br>diagram: National Science Foundation<br/>]]></ReferenceText>
+		<Units>billion tons</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>100.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="300" y="1450" color="spindrift"/>
+	</Page>
+	<Page Title="Climate Change Costs">
+		<Level>1</Level>
+		<CausalFactor>Average Global Temperature</CausalFactor>
+		<Coefficient name="percent cost per degree" initValue=".012" minValue="0.005" maxValue="0.03" units="% of GDP per degree" />
+		<MainText><![CDATA[<p style="font-size:110%">Most people think about environmental problems in terms of the number of people they kill, but the most destructive effects of climate change will be economic. Here are just a few of the costs of climate change:</p>
+		<p style="font-size:110%"><b>Extreme Weather Costs:</b> when tornados and hurricanes hit, the news stories talk about the number of people who died, but the economic costs are often huge. The typical hurricane wreaks a few billion dollars of damage, and the big ones cost maybe $20 billion, and Superstorm Sandy in 2012 cost $60 billion. That was just one storm!</p>
+		<p style="font-size:110%">But there are other kinds of extreme weather that inflict damage. Heat waves wipe out crops. Tornados tear up buildings. Floods destroy bridges, roads, and houses.</p>
+		<p style="font-size:110%"><b>Rising Sea Level Costs:</b> All over the world, people are spending billions of dollars to counter the increasing damages due to higher sea levels. They are raising and reinforcing seawalls, levees and dikes and moving seaside structures further back from the shoreline. Because many cities are located on flat areas on the coast, elaborate protection systems must be built to cope with the dangers of high tides or storm surges on top of rising sea levels.</p>
+		<p style="font-size:110%"><b>New Water Supply Systems:</b> The bad news is that, because temperatures in general will rise, humanity will need more water. The good news is that, in general, there will be more rain and snow. The bad news is that the extra water will fall in places where there&rsquo;s already plenty of water, not in the places that need it the most. We&rsquo;ll have to expand our water supply systems, extending them to greater distances to get the water where we need it. We&rsquo;ll need to build more dams and bigger reservoirs, because rain will often be concentrated in short, intense seasons. We&rsquo;ll need bigger and longer canals to transport water greater distances. In some cases, because of high evaporation rates, we&rsquo;ll have to replace canals with pipelines.</p>
+		<p style="font-size:110%"><b>Shifting Agricultural Infrastructure:</b> As climate changes, the ideal ranges for different crops will move. For example, the ideal wheat-growing regions of North America will shift northward, opening up new farmland in Canada. But areas in Texas, Oklahoma, and Kansas that now grow wheat will become too hot for it to grow well. That means that all the agricultural infrastructure in those states that has been designed to handle wheat will have to be modified or demolished. Meanwhile, we&rsquo;ll have to build new infrastructure to handle wheat in Canada. And the dollars just keep adding up!</p>
+		<p style="font-size:110%"><b>Building Modifications</b> Areas that never needed air conditioning will need to install it, and areas that already have air conditioning will have to expand their cooling systems. The good news is that we&rsquo;ll also be able to reduce the amount of money we spend heating buildings. The bad news is that heating is 100% efficient (all the energy you get from burning fuel is transformed into heat), but cooling is only about 40% efficient.</p>
+		<p style="font-size:110%"><b>Disease spread:</b> As temperate areas grow warmer, tropical diseases move northwards. Mosquitos breed faster in warmer areas, carrying with them the diseases that were once confined to tropical areas.</p>
+		<p style="font-size:110%"><a href="http://www.webcitation.org/5nCeyEYJr">The Stern Review</a> is the most thorough economic analysis of the costs of climate change. It generated a lot of controversy, which is well-summarized in the <a href="http://en.wikipedia.org/wiki/Stern_Review">Wikipedia article</a> on the subject.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.economist.com/node/8108221?story_id=8108221">The Economist</a> printed a good article on the Stern review.<br>
+		<a href="http://www.nytimes.com/2010/11/26/science/earth/26norfolk.html?ref=science">one example of Sea Level costs</a><br>
+		Extreme weather events cost the US <a href="http://www.nytimes.com/2011/12/25/science/earth/climate-scientists-hampered-in-study-of-2011-extremes.html">$50 billion</a> in 2011<br>
+		<a href="http://www.cbsnews.com/stories/2011/10/01/ap/business/main20114309.shtml">an example of nasty ants migrating north because of climate change</a><br>
+		<a href="http://www.esri.ie/UserFiles/publications/20081007093843/WP255.pdf">an academic paper on the costs of climate change</a><br>
+		<a href="http://nordhaus.econ.yale.edu/Balance_2nd_proofs.pdf">a book on the costs of climate change</a>		
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/>Images:<br/><a href="http://www.wrightsville.com/bulldozer%20pushing%20dredge%20spoil%20in%20sand%20reservoir.jpg">beach</a><br/>]]></ReferenceText>
+		<Units>of global GDP</Units>
+		<Format>Percent2</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="750" y="1450" color="bubblegum"/>
+	</Page>
+	<Page Title="Forest Fires">
+		<Level>1</Level>
+		<CausalFactor>Average Global Temperature</CausalFactor>
+		<Coefficient name="heat sensitivity" initValue="2000.0" minValue="1500.0" maxValue="2500.0" units="square miles per degree"/>
+		<MainText><![CDATA[<p style="font-size:110%">Forest fires having been growing in size, frequency, and intensity for the last 20 years. In the twenty years from 1980 to 1999, big fires in the USA burned an annual average of about 100,000 acres of forest and cost about $500 million to fight; since 2000, that average has jumped to 700,000 acres and over $1 billion to fight. Since 2000, the states of New Mexico, California, Alaska, Georgia, Florida, Utah, Arizona, and Texas have all experienced the worst fires in their histories. In 2010 in Russia, the largest forest fires in their history destroyed vast areas of forest, costing some $15 billion in damages and over 50,000 deaths due to heat and smog. In 2009, Australia experienced the deadliest brush fires in its history, in which 173 people died and over a million acres burned. In Greece in 2005, about 200,000 acres were burned; two years later, 670,000 acres burned and 84 people died. Large forest fires also struck Bolivia and Quebec in 2010.</p>
+		<p style="font-size:110%">This huge surge in forest fires can partly be blamed on bad decisions in the 1950s and 1960s, during which time fires were suppressed as much as possible. This led to a buildup of brush and other vegetation in forests. Fire is a natural part of forest ecology and throughout history, small fires swept through forests, clearing out the small stuff on the forest floor but leaving the trees only lightly damaged. By the 1980s, the amount of combustible material on the forest floors was enormous, so that when fires did start, they quickly grew to enormous sizes and were unstoppable.</p>
+		<p style="font-size:110%">By the 1990s, people realized that small fires are a necessary part of forest health, and so they have permitted (and sometimes even started) small fires to clear out the underbrush. People have also learned to clear out brush by hand to reduce the amount of fuel available to a fire.</p>
+		<p style="font-size:110%">But the big surge in forest fires is not explained solely by past bad decisions: there have been lots of big fires in places that never practiced fire suppression in the first place. An important cause of the recent rash of big fires is <a href="Drought">drought</a> and hot summers due to climate change.</p>
+		<p style="font-size:110%">Another factor, less spectacular but just as bad, is the spread of diseases, fungi, and bugs that kill trees. In the past, these killers have been controlled by winter freezes, but as winters grow milder, more of them survive to attack trees. Already an increase in tree mortality has been discovered in the forests of California, and one large section of forest in the Canadian Rockies is being devastated by disease.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.erh.noaa.gov/okx/pics/firewx1.jpg">forest fire image</a><br/>]]></ReferenceText>
+		<Units>square miles</Units>
+		<Format>Integer</Format>
+		<InitialValue>10000.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>100000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="150" y="1450" color="tangerine"/>
+	</Page>
+	<Page Title="Temperate Forest Land">
+		<Level>1</Level>
+		<CausalFactor>Forest Fires</CausalFactor>
+		<MainText><![CDATA[
+		<p style="font-size:110%">This is the forest land that you are most familiar with. There are actually several types of such forests: deciduous conifer, and temperate rainforest. These forests do not sport as much biodiversity as tropical forests. They have less sunlight throughout the year and the winter freezes kill off many small plants and most bugs.</p>
+		<p style="font-size:110%">A rough gauge of the productivity of a forest is the amount of biomass it contains and the amount of new biomass it generates each year. A tropic rainforest typically holds about 200 tons of biomass per acre and generates about 20 tons of biomass per acre per year. Deciduous forests are only half as productive as tropical rainforests.</p>
+		<p style="font-size:110%">The redwood forests of northwestern California seem to hold the record here: they can contain 1200 tons of biomass per acre. Old growth douglas fir forests hold about 400 tons of biomass per acres and produce about 5 tons of biomass per acre per year.</p>
+		<p style="font-size:110%">The Northern Hemisphere was once covered with temperate forests; about 60% of the total area of the Northern Hemisphere was forested. People have been energetically cutting down trees for thousands of years, and now that figure is more like 30%. In other words, we have already cut down half of the temperate forest in the world.</p>
+		<p style="font-size:110%">Fortunately, people have awakened to the problem and begun serious efforts to reforest their lands. Europeans are furthest ahead in this effort; in the last 20 years, the total amount of forest in Europe has actually increased. Elsewhere, however, reforestation is not keeping up with deforestation, and the total amount of temperate forest is falling.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[
+		<a href="http://www.fs.fed.us/outdoors/naturewatch/resources/Rainforest-Slide-Show.pdf">a nice PDF about the temperate rainforests in Alaska</a><br>
+		<a href="http://www.marietta.edu/~biol/biomes/tempded.htm">temperate deciduous forest</a><br>
+		<a href="http://news.mongabay.com/news-index/temperate%20forests1.html">Extra! Extra! The latest poop on temperate forests!</a><br>
+		<a href="http://www.efi.int/portal/virtual_library/information_services/mapping_services/forest_map_of_europe/">European reforestation</a><br>]]></ReferenceText>
+		<Units>million square miles</Units>
+		<Format>Double</Format>
+		<InitialValue>5.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="150" y="1550" color="clover"/>
+	</Page>
+	<Page Title="Ocean Acidification">
+		<Level>2</Level>
+		<CausalFactor>Net CO2 Emissions</CausalFactor>
+		<Coefficient name="Acidity increase rate" initValue="0.0005" minValue="0.0004" maxValue="0.0006" units="% per billion tons"/>
+		<MainText><![CDATA[<p style="font-size:110%"><b>Good news!</b> Only about half of the carbon dioxide that we spew into the atmosphere actually stays there; the other half is absorbed by the oceans, reducing the magnitude of the greenhouse effect. In other words, the oceans are halving the size of the greenhouse effect problem.</p>
+		<p style="font-size:110%"><b>Bad news!</b> The carbon dioxide that goes into the oceans doesn&rsquo;t just sit on its hands. It reacts with water to form <i>carbonic acid</i>.</p>
+		<p style="font-size:110%">And what is carbonic acid, you ask? You already have experienced a great deal of carbonic acid in your life: it&rsquo;s what makes soda pop fizzy. In fact, all those fizzy bubbles in soda pop are carbon dioxide gas. (This means that you can help stop climate change by never, ever burping after drinking soda.) The manufacturer puts carbon dioxide under pressure into the soda, and inside the soda it forms carbonic acid, which gives a sharp taste to the soda. After you open the soda, the carbonic acid starts converting back into carbon dioxide, forming little bubbles that make it fizzy. If you wait long enough, most of the carbonic acid will turn into carbon dioxide gas and bubble away. That&rsquo;s why the soda tastes flat after a while: the sharp acid taste goes away as the carbonic acid turns back into carbon dioxide that bubbles away.</p>
+		<p style="font-size:110%">The same thing is happening in reverse in our oceans. Half of the extra carbon dioxide that we put into the air dissolves into the ocean to form carbonic acid. In the last few hundred years, the acidity of the ocean has increased by about 30%.</p>
+		<p style="font-size:110%"><b>Good news!</b> There&rsquo;s already stuff in the ocean that neutralizes carbonic acid! It&rsquo;s <i>calcium carbonate</i>, and the ocean has billions of tons of it.</p>
+		<p style="font-size:110%"><b>Bad news!</b> That calcium carbonate is what sea shells and coral are made of. Which means that the extra carbonic acid that is being produced is eating up sea shells and coral, and making it harder for new creatures to build sea shells and coral. This phenomenon is most readily apparent as <i>coral bleaching</i>. It kills not only the coral, but all the creatures who depend upon the coral for their ecosystems. Many of these species go extinct when they lose their ecosystem.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[
+		<a href="http://en.wikipedia.org/wiki/Ocean_acidification">as always, Wikipedia on ocean acidification</a><br>
+		<a href="http://oceanacidification.wordpress.com/">would you believe it? An entire blog about ocean acidification! (very technical)</a><br>
+		<a href="http://www.pmel.noaa.gov/co2/story/Ocean+Acidification">NOAA&rsquo;s page on ocean acidification</a><br>
+		<a href="http://ngm.nationalgeographic.com/2011/04/ocean-acidification/kolbert-text">National Geographic story</a><br>
+		<a href="http://en.wikipedia.org/wiki/Coral_bleaching">you-know-what-pedia article on coral bleaching</a><br>
+		<a href="http://www.youtube.com/watch?v=Wcoyj2VPCOM&feature=related">a cartoon about coral reefs</a><br>
+		<br><br><br><br><br><br>		
+		<a href=" http://upload.wikimedia.org/wikipedia/commons/2/21/Port_Ghalib_march_2006-0107.jpg">left image</a><br/><a href="http://upload.wikimedia.org/wikipedia/en/2/21/Bleachedcoral.jpg">right image</a><br/>]]></ReferenceText>
+		<Units>of natural acidity</Units>
+		<Format>Percent</Format>
+		<InitialValue>1.29</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>5.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="750" y="1550" color="lavender"/>
+	</Page>
+	<Page Title="Global GDP">
+		<Level>1</Level>
+		<CausalFactor>Energy Price</CausalFactor>
+		<CausalFactor>Energy Conservation</CausalFactor>
+		<CausalFactor>Climate Change Costs</CausalFactor>
+		<CausalFactor>Investment Fund Amount</CausalFactor>
+		<CausalFactor>Net Energy Production</CausalFactor>
+		<Coefficient name="Discount Rate" initValue="1.035" minValue="0.0004" maxValue="0.0006" units="% per billion tons"/>
+		<Coefficient name="Impact of Energy Price" initValue="300" minValue="0.0004" maxValue="0.0006" units="% per billion tons"/>
+		<Coefficient name="Price Effect Exponent" initValue="0" minValue="0.0004" maxValue="0.0006" units="% per billion tons"/>
+		<MainText><![CDATA[<p style="font-size:110%">This is humanity&rsquo;s total economic output: everything that we make or do that makes people&rsquo;s lives better. It&rsquo;s all the food, clothing, housing, cars, televisions, appliances, computers, mobile phones, roads, dams, farm equipment, and other stuff that we have.</p>
+		<p style="font-size:110%">But GDP is not limited to goods; it also includes services. The work of lawyers, doctors, dentists, electricians, salespeople, teachers, programmers, and many others counts as services.</p>
+		<p style="font-size:110%">Worldwide, goods constitute only about one-third of total global GDP; about two-thirds of global GDP is accounted for by services. In rich countries, services account for as much as 80% of total economic output; in poor countries, services account for maybe 50% of GDP.</p>
+		<p style="font-size:110%">The GDP of the USA is about $15 trillion; for the world as a whole it&rsquo;s about $74 trillion.</p>
+		]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://en.wikipedia.org/wiki/List_of_countries_by_GDP_(PPP)_per_capita">a list of countries</a> sorted by GDP per capita<br>
+		<a href="http://en.wikipedia.org/wiki/List_of_countries_by_GDP_sector_composition">list of economic sectors in different countries</a>		
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<a href="http://onlyhdwallpapers.com/wallpaper/money_coin_desktop_2589x1649_wallpaper-282182.jpg">currency image</a><br/>]]></ReferenceText>
+		<Units>trillion</Units>
+		<Format>Currency</Format>
+		<InitialValue>74</InitialValue>
+		<MinimumValue>10</MinimumValue>
+		<MaximumValue>1000</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="600" y="1100" color="moss"/>
+	</Page>
+	<Page Title="Economic Growth">
+		<Level>1</Level>
+		<CausalFactor>Global GDP</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">For most of history, economic growth was so slow as to be unnoticeable. It is only in the last few hundred years that economic growth has become apparent. Nowadays, people hope that hard work will better their lot, so economic growth is now a political expectation. In the USA since World War II, people seem to expect growth rates of about 2.5%; if the economy grows more slowly than this, they vote against the current President. All over the world, economic growth or its absence play major roles in political stability. In the worst cases, lack of economic growth leads to rebellion or civil war. But when the economy is growing, people don&rsquo;t want to rock the boat and mess up a good thing.</p>
+		<p style="font-size:110%">In America and the rest of the rich world, economic growth ran at about 5% during the 1960s and has steadily declined since then; it&rsquo;s about 2% now but will probably increase a bit when we recover from the current world recession.</p>
+		<p style="font-size:110%">In the rest of the world, however, growth has been rising for the last ten or twenty years. China has seen extraordinary growth rates; since 1990, the Chinese GDP has more than tripled in size. Other Asian countries are no slouches, either, with growth rates averaging 5%. Africa, averaging 4%, is growing almost as fast, and indications are that growth will accelerate over the next ten years.  Eastern Europe and Latin America are just below Africa in the growth league. All in all, the economic growth of the last fifty years is unprecedented in human history and promises to become even greater over the next fifty years.</p>
+		<p style="font-size:110%">But this creates a new problem. As people grow wealthier, they consume more stuff. More and better food, electrical appliances, and cars are being snapped up in staggering quantities around the world – and in the process, these people are starting to gobble up resources and energy at a frightening rate. There simply isn&rsquo;t enough energy available for all 7 billion of us to live the lifestyle of the typical American.</p>
+		<p style="font-size:110%">These changes will have profound environmental and economic consequences.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://en.wikipedia.org/wiki/Economic_growth">Wikipedia on economic growth</a><br>
+		<a href="http://www.econ.yale.edu/~egcenter/">The Yale Economic Growth Center</a>, an academic think tank<br>
+		<a href="http://www.treasury.gov/resource-center/data-chart-center/Documents/20120502_EconomicGrowth.pdf">report</a> from the US Treasury on recent American economic growth<br>
+		<a href="http://www.bls.gov/opub/ooq/2005/winter/art04.pdf">another government report</a> explaining the causes of economic growth
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<a href="http://4.bp.blogspot.com/-4Oj5FBQ0lYo/TiLGn2OUARI/AAAAAAAAAGI/w25I3m3MSPo/s1600/vietnamese+country+%252816%2529.jpg">cellphone rice worker</a><br><br><br>]]></ReferenceText>
+		<Units>%</Units>
+		<Format>Double</Format>
+		<InitialValue>3.0</InitialValue>
+		<MinimumValue>-10.0</MinimumValue>
+		<MaximumValue>20.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>false</PositiveGraph>
+		<ValueDisplayed>Average</ValueDisplayed>
+		<Location x="1100" y="1200" color="aqua"/>
+	</Page>
+	<Page Title="Radioactive Emissions">
+		<Level>2</Level>
+		<CausalFactor>Nuclear Energy Production</CausalFactor>
+		<Coefficient name="Nuclear Risk" initValue="0.5" minValue="0.1" maxValue="5" units="sieverts per BgOge"/>
+		<MainText><![CDATA[<p style="font-size:110%">There are three basic types of radiation:</p>
+		<p style="font-size:110%"><b>Alpha</b> These are the Mac trucks of radiation: they're big, heavy particles that can smash any atom they hit. The bad news is that an alpha particle is guaranteed to do damage to whatever it hits. The good news is that it can't get far because it hits almost anything in the way. An inch of air is enough to stop them. The dead skin on the exterior of your body is pretty good armor against alpha radiation. Of course, if you inhale radioactive particles that emit alpha radiation, the alpha particles will be inside your lungs, where there's no protection. Say hello to lung cancer.</p>
+		<p style="font-size:110%"><b>Beta</b> These are much lighter; a beta particle is to an alpha particle as a bowling ball is to a Mac truck. If you're more than ten feet away from a source of beta particles, not many of them will reach you. Because they're much smaller, they can penetrate deeper into your body, but they don't do so much damage when they hit molecules there. As with alpha particles, they're most dangerous when you inhale tiny particles emitting beta radiation.</p>
+		<p style="font-size:110%"><b>Gamma</b> This stuff can be very dangerous, because it can penetrate almost anything. In fact, you're always being hit by gamma rays coming all the way through the atmosphere from space. So gamma rays can penetrate deep inside your body. This makes them especially dangerous. Something emitting alpha and beta radiation can only hurt you if it's actually touching you, but gamma rays can hit you from far away.</p>
+		<p style="font-size:110%">Nuclear power releases radioactivity through many activities: the mining of uranium, its processing, its use in nuclear power plants, and its radioactive waste. However, the amount of radiation released by these activities is too small to worry much about. The really dangerous radioactive emissions occur when there is a major accident, such as happened at <a href="Chernobyl">Chernobyl</a> or <a href="What Happened at Fukushima">Fukushima</a>.</p>]]></MainText>
+		<FormulaText><![CDATA[Nuclear Energy Production * <font color="Red">Nuclear Safety</font>]]></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://theintelhub.com/wp-content/uploads/2010/08/radiation11254496251.jpg">radiation symbol</a><br/>]]></ReferenceText>
+		<Units>seiverts</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="200" y="1000" color="magenta"/>
+	</Page>
+	<Page Title="Radiation Cancer Deaths">
+		<Level>2</Level>
+		<CausalFactor>Radioactive Emissions</CausalFactor>
+		<Coefficient name="Cancer Deaths per Sievert" initValue="0.5" minValue="0.15" maxValue="10.0" units=" "/>
+		<MainText><![CDATA[
+		<p style="font-size:110%">A bit of radiation, either alpha, beta, or gamma, can smash into a molecule inside your body, and break it up. If that molecule just happens to be a DNA molecule, things can go seriously wrong.</p>
+		<p style="font-size:110%">DNA molecules are the program that operates the cell; they control all the biochemistry going on inside the cell. If the program gets messed up, it can crash, and the cell dies. But there's a tiny chance that the program can be altered in such a way as to turn it into something like a zombie. Usually the zombie cell will meet a quick end, but there's a one-in-a-million chance that it will grow and divide, and its child cells will also grow and divide, and they'll grow and divide, and so on. This is what we call cancer.</p>
+		<p style="font-size:110%">The odds that a bit of radiation will hit one of your cells in precisely the right place to create a cancer cell are zillions to one. But if you are exposed to zillions of bits of radiation, it can happen. It's sort of like a game of Russian Roulette in which the gun has zillions of slots for bullets. If there are only a couple of bullets to put into those slots, you're very safe, but the more bullets (bits of radiation) there are, the greater your chance of losing. And if you expose a million people to a zillion bits of radiation, there are probably going to be a few unlucky ones.</p>
+		<p style="font-size:110%">Radiation is everywhere. It comes from the sun in the form of ultraviolet light, which is sort of like really weak gamma rays. It comes from the natural radioactivity in the ground. It comes down from space. But these are small amounts and they aren't dangerous.</p>
+		<p style="font-size:110%">But if things go terribly wrong at a nuclear power plant, it can release large amounts of radioactivity; that's why we worry about nuclear power plants. <a href="Nuclear Safety">How safe are they?</a>
+]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[
+		<a href="http://www.cancer.org/cancer/cancercauses/othercarcinogens/medicaltreatments/radiation-exposure-and-cancer">The American Cancer Society on radiation</a><br>
+		<a href="http://www.nrc.gov/about-nrc/radiation/health-effects/rad-exposure-cancer.html">The Nuclear Regulatory Commission on radiation</a><br>
+		<a href="http://www.nap.edu/catalog.php?record_id=11340">More about radiation than you'd ever want to know</a><br>
+		<a href="http://atomicinsights.com/2012/01/does-radiation-really-cause-cancer-conversation-among-professionals.html">just for fun, a contrarian view</a><br><br><br><br><br><br><br>
+		<a href="http://theintelhub.com/wp-content/uploads/2010/08/radiation11254496251.jpg">radiation symbol</a><br/>]]></ReferenceText>
+		<Units>Deaths</Units>
+		<Format>Integer</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="150" y="1100" color="black"/>
+	</Page>
+	<Page Title="Farm Land">
+		<Level>3</Level>
+		<CausalFactor>Rainforest Clearing</CausalFactor>
+		<CausalFactor>Sea Level</CausalFactor>
+		<Coefficient name="loss of land" initValue="0.0005" minValue="0.00025" maxValue="0.0010" units="million square miles per inch"/>
+		<MainText><![CDATA[The amount of land available for agriculture is crucial to humanity&rsquo;s food supply. Rainforest Clearing converts forest to farm land, but has serious negative effects on biodiversity. Rising sea level inundates some of our most productive farmland in river deltas such as the Nile, the Irrawaddy, Mekong, Yellow, and Pearl Rivers.]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.guardian.co.uk/environment/2009/aug/21/climate-change-nile-flooding-farming">rising sea levels and the Nile delta</a><br/>
+		<a href="http://ddr.nal.usda.gov/bitstream/10113/43998/1/IND44433028.pdf">a rather old research paper on the costs of sea level rise to the USA</a><br/>
+		<a href="http://maps.grida.no/go/graphic/potential-impact-of-sea-level-rise-on-bangladesh">effects of rising sea levels on Bangladesh</a><br/>
+		<a href="http://www.vncold.vn/Modules/CMS/Upload/13/Science/TCVanEwv09_160509/identification%20sea%20level%20rise%20impacts%20on%20MK%20delta_5april.pdf">effects of rising sea level on the Mekong Delta</a><br/><br/><br/><br.><br/><br/><br/>
+		<a href="http://www.flickr.com/photos/sbeebe/3275032616/">farmland image</a><br/>]]></ReferenceText>
+		<Units>million square miles</Units>
+		<Format>Double</Format>
+		<InitialValue>2.1</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="600" y="1550" color="seafoam"/>
+	</Page>
+	<Page Title="Agricultural Productivity">
+		<Level>3</Level>
+		<CausalFactor>Scientific Progress</CausalFactor>
+		<Coefficient name="impact of scientific progress" initValue="7.5" minValue="7" maxValue="8" units="teracalories per million square miles"/>
+		<MainText><![CDATA[<p style="font-size:110%">The combination of improved crop strains, better use of fertilizer, and the application of herbicides and pesticides led to the <b>Green Revolution</b> in the 1960s and 1970s, which triggered a leap in agricultural productivity all over the world and saved billions of people from starvation.</p>
+		<p style="font-size:110%">After this spectacular leap, we continued to see steady improvements in agricultural productivity. Improved crop strains, better use of pesticides, fertilizer, and water have increased agricultural output. However, unless we continue to improve farm productivity, we will not keep up with the growing number of mouths to be fed. There are still millions of acres of farmland in poor countries whose output could be increased with greater use of pesticides and fertilizer. Developments in genetically modified crops can also increase productivity.</p>
+		<p style="font-size:110%">This is not the same thing as <i>agricultural efficiency</i>, which is the amount of food we get based on the amount of labor we put in. Tractors and machines increase agricultural efficiency, but agricultural productivity depends on things that affect how the crops grow, not how easy it is to run the farm.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://en.wikipedia.org/wiki/Green_Revolution">The Green Revolution</a><br>
+		<a href="http://www.ifpri.org/sites/default/files/pubs/pubs/ib/ib11.pdf">costs and benefits of the Green Revolution</a><br>
+		<a href="http://www.erasmatazz.com/library/science/science-a-la-mao.html">Red Revolution meets Green Revolution!</a><br>
+		<a href="http://en.wikipedia.org/wiki/Norman_Borlaug">Norman Borlaug, the father of the Green Revolution</a><br>		
+		<br/><br/><br/><br/><br/><br/><br/><br/>Image:<br/><a href="http://www16.speedyshare.com/files/26522606/download/FreeImageWorks.com%20%20%2018351904.jpg">grain</a><br/>]]></ReferenceText>
+		<Units>teracalories per million square miles</Units>
+		<Format>Double</Format>
+		<InitialValue>7.5</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Average</ValueDisplayed>
+		<Location x="750" y="1300" color="mocha"/>
+	</Page>
+	<Page Title="Food Production">
+		<Level>3</Level>
+		<CausalFactor>Agricultural Productivity</CausalFactor>
+		<CausalFactor>Farm Land</CausalFactor>
+		<MainText><![CDATA[<p style="font-size:110%">A healthy body needs all sorts of different nutrients: protein, vitamins, carbohydrates, and minerals. But for humanity as a whole, the biggest problem is simply getting enough calories to survive. A healthy working man needs 3,000 calories per day; most adults need about 2,000 calories per day, and children need a bit less than that. Thus, in order to give every person on this planet 2,000 calories per day, we would need to provide about 14 teraCalories per year. Right now, we grow more than that -- but we don&rsquo;t spread the food around evenly. Rich people have more calories than they need, and poor people have fewer calories than they need. In order to insure that everybody gets a minimum diet, we need to grow a total of about 3,000 calories per person per day.</p>
+		<p style="font-size:110%">But there&rsquo;s more: people like to eat meat, and making one calorie worth of meat requires ten calories of grain. Thus, meat is ten times more calorie-intensive than regular food. As we grow more food, we tend to convert more of that food into meat. So if we were growing 10,000 calories of food for every person every day, that wouldn&rsquo;t necessarily be too much: if we converted 8,000 of those calories into meat, that would leave only 2,000 calories of regular food and 800 calories of meat – not quite enough to meet the 3,000 calorie requirement that working males need. That&rsquo;s one reason why we still can&rsquo;t feed everybody properly: we throw away a lot of the food value when we convert grain to meat.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.globalchange.umich.edu/globalchange2/current/lectures/food_supply/food.htm">a basic explanation of the world&rsquo;s food supply</a><br>
+		<a href="http://www.nytimes.com/2011/06/05/science/earth/05harvest.html?_r=1&ref=temperaturerising">a news report on the global food situation</a><br>
+		<a href="http://www.grida.no/publications/rr/food-crisis/page/3562.aspx">United Nations report on the world&rsquo;s food supply</a><br><br><br><br><br><br><br><br>
+		<a href="http://www.harvesteverything.com/images/combine-big.jpg">combine</a><br/>]]></ReferenceText>
+		<Units>teraCalories</Units>
+		<Format>Double</Format>
+		<InitialValue>16</InitialValue>
+		<MinimumValue>4.0</MinimumValue>
+		<MaximumValue>20.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="600" y="1650" color="lime"/>
+	</Page>
+	<Page Title="Population">
+		<Level>3</Level>
+		<CausalFactor>Malnutrition Deaths</CausalFactor>
+		<CausalFactor>Educational Level</CausalFactor>
+		<Coefficient name="uneducated growth rate" initValue="5" minValue="0.0" maxValue="1.0" units="%"/>
+		<Coefficient name="power of education" initValue="0.25" minValue="0.0" maxValue="1.0" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">Two hundred years ago, there were only one billion people. One hundred years ago, the human population was two billion. Fifty years ago, it was three billion. It took only 15 years to reach four billion, and today seven billion human beings inhabit this earth.</p>
+		<p style="font-size:110%">The reason we're gaining so many people so fast is that we have defeated some of the most dangerous diseases. Smallpox once killed millions every year; now it has been eradicated. Malaria has lost much of its lethality because of better medicines. The list of diseases that once ravaged humanity and have now been brought to bay is long: cholera, yellow fever, tuberculosis, bubonic plague, and many others.</p>
+		<p style="font-size:110%">We have also accomplished wonders in providing food for billions. We are still far from eliminating hunger, but the progress we have made has permitted huge leaps in human population.</p>
+		<p style="font-size:110%">How can we put a lid on population growth? It turns out that birth rates automatically fall as people grow wealthier. The urge to have large families is a characteristic of agricultural societies; as they make the transition to a modern economy, the need for huge families diminishes and birth rates fall. Education seems to play a large role. The treatment of women also seems to be important; as women attain greater independence, they reduce the number of children they have.</p>
+		<p style="font-size:110%">These processes are already well underway; most experts believe that the earth's population will peak at around 10 billion at the end of this century.</p>
+		<p style="font-size:110%">Even as some poor countries struggle with too much population growth, some rich countries are worried about population decline. Japan and Europe are both facing long-term declines in population, which could lead to a completely new set of problems.]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://io9.com/5969944/has-humanitys-explosion-become-a-population-bomb">An interesting article on population</a><br>
+		<a href="http://data.worldbank.org/indicator/SP.POP.GROW">Data on population growth in different countries</a><br>
+		<a href="http://www.npg.org">an organization dedicated to reversing population growth</a><br>
+		<a href="https://mises.org/Econsense/ch41.asp">applause for population growth</a><br><br><br><br><br><br><br><a href="http://upload.wikimedia.org/wikipedia/commons/4/4f/CfaN-Crowd_2.jpg">crowd image</a><br/>]]></ReferenceText>
+		<Units>billion people</Units>
+		<Format>Double</Format>
+		<InitialValue>7.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>100.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Average</ValueDisplayed>
+		<Location x="450" y="1650" color="salmon"/>
+	</Page>
+	<Page Title="Rainforest Clearing">
+		<Level>3</Level>
+		<CausalFactor>Population</CausalFactor>
+		<CausalFactor>Food Production</CausalFactor>
+		<Coefficient name="Clearing rate" initValue="60000.0" minValue="40000" maxValue="80000.0" units=" "/>
+		<Coefficient name="minimum net caloric requirement" initValue="3000.0" minValue="2500.0" maxValue="3500.0" units="calories per person per day"/>
+		<MainText><![CDATA[<p style="font-size:110%">There are three primary causes of rainforest clearing:</p>
+		<p style="font-size:110%"><b>Lumber</b> Some of the most beautiful kinds of wood for furniture come from tropical rainforests. Ebody is jet black; cocobolo is orange; blackwood is actually brown; bloodwood is dark red; and purple heart is, in fact, purplish. Because these trees grow slowly, their wood is extremely hard and polishes to a shine. They are highly resistant to rot because the warm, humid climate of the tropics makes rot a serious problem for trees.</p>
+		<p style="font-size:110%">Tropical woods are therefore highly desirable for everything from boatmaking to musical instruments. But because they grow very slowly, they can't easily be replaced, so people just keep cutting down more rainforest to get at them.</p>
+		<p style="font-size:110%"><b>Palm oil</b> Palm oil is valuable because it's supposed to be healthy. Therefore, countries like Indonesia are cutting down rainforests to make palm plantations. Roughly 60,000 square miles of tropical forest land have been cut down for palm plantations.</p>
+		<p style="font-size:110%"><b>Farmland</b> This is the largest source of rainforest destruction. Especially in Brazil, thousands of square miles of rainforest are cleared to make new farmland. This increases the world's food supply. We still don&rsquo;t have enough food to feed every person on this planet properly, so we need to grow more food, and increasing the amount of farmland is one easy way to accomplish that.</p>
+		<p style="font-size:110%">That&rsquo;s why the best way to reduce rainforest clearing is to improve agricultural productivity.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://earthobservatory.nasa.gov/Features/WorldOfChange/deforestation.php">satellite photos of massive deforestation in just ten years</a><br>
+		<a href="http://www.savetherainforest.org/index.htm">The Save the Rainforest website</a><br>
+		<a href="http://kids.mongabay.com/elementary/503.html">a site for kids</a><br>
+		<a href="http://worldwildlife.org/threats/deforestation">The World Wildlife Fund on deforestation</a><br>
+		<a href="http://ezinearticles.com/?Benefits-of-Deforestation&id=504455">I found somebody defending deforestation!</a><br>]]></ReferenceText>
+		<Units>square miles</Units>
+		<Format>Integer</Format>
+		<InitialValue>30000.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="450" y="1750" color="mocha"/>
+	</Page>
+	<Page Title="Rainforest Land">
+		<Level>3</Level>
+		<CausalFactor>Rainforest Clearing</CausalFactor>
+		<MainText><![CDATA[This is the total amount of rainforest remaining on the planet. It's steadily being destroyed by rainforest clearing. That is costing you Gaia points.]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[]]></ReferenceText>
+		<Units>million square miles</Units>
+		<Format>Double</Format>
+		<InitialValue>2.41</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="450" y="1850" color="fern"/>
+	</Page>
+	<Page Title="Malnutrition Deaths">
+		<Level>3</Level>
+		<CausalFactor>Food Production</CausalFactor>
+		<CausalFactor>Population</CausalFactor>
+		<Coefficient name="intercept" initValue="6850000" minValue="5000000.0" maxValue="8000000.0" units=" "/>
+		<Coefficient name="slope" initValue="-1370000" minValue="-1600000.0" maxValue="-1000000.0" units=" "/>
+		<MainText><![CDATA[Starvation kills those who don&rsquo;t get enough food to eat. But malnutrition kills many more people than starvation, because malnutrition weakens the body and reduces its resistance to common diseases. Nearly four million people die each year because of malnutrition; it is the greatest single cause of death in the world. In this day and age, we still can&rsquo;t feed everyone properly.]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.worldhunger.org/articles/Learn/world%20hunger%20facts%202002.htm">a detailed look at worldwide malnutrition</a><br><a href="https://www.wfp.org/hunger/stats">some depressing facts about malnutrition</a><br><a href="http://www.who.int/nutgrowthdb/database/countries/en/index.html">a database on malnutrition around the world</a><br><a href="http://www.chilloutpoint.com/funny/supersized-me-the-funniest-fat-people-pics.html">on the other hand...</a><br><br><br><br><br><br><br><br>		
+		<a href="http://www.juesatta.com/wp-content/uploads/2010/09/starvation.jpg">children image</a><br/>]]></ReferenceText>
+		<Units>deaths</Units>
+		<Format>Integer</Format>
+		<InitialValue>3700000</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>100000000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="600" y="1750" color="black"/>
+	</Page>
+	<Page Title="Extreme Weather">
+		<Level>2</Level>
+		<CausalFactor>Average Global Temperature</CausalFactor>
+		<Coefficient name="degree of wildness" initValue="500." minValue="200.0" maxValue="1000.0" units="petaJoules per degree"/>
+		<MainText><![CDATA[<p style="font-size:110%">As the climate changes due to the greenhouse effect, weather patterns shift, and some strange things can start happening. Hurricanes get bigger and more destructive; bigger and more dangerous tornados can arise; we can experience sudden large amounts of rain that lead to floods; we can also get big droughts. Of course, these things happen all the time, but climate change can make them more common and more powerful.</p>
+		<p style="font-size:110%">You are not responsible for the wild weather than has been a natural part of the earth&rsquo;s weather over the last hundred years; instead, we count only the <b>additional</b> extreme weather that is generated by climate change.</p>
+		<p style="font-size:110%">We measure wild weather by the amount of energy it releases. The additional wild weather that has been created in the last few years is enormous -- about as much as the human race generates in energy every year.</p>
+		<p style="font-size:110%">In the year 2011, 3,000 weather records were broken in the USA, and extreme weather events resulted in damages of $50 billion.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://thewatchers.adorraeli.com/2011/12/11/nrdc-released-2011-extreme-weather-map-thousands-of-weather-records-broken-in-the-us/">extreme weather statistics</a><br><br><br><br><br><br><br>
+		<a href="http://librarycat.blogstream.com/v1/p185.html">image</a><br>]]></ReferenceText>
+		<Units>petaJoules</Units>
+		<Format>Double</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>10000.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="900" y="1450" color="orchid"/>
+	</Page>
+	<Page Title="Extreme Weather Deaths">
+		<Level>2</Level>
+		<CausalFactor>Extreme Weather</CausalFactor>
+		<Coefficient name="Extreme Weather Destructiveness" initValue="10.0" minValue="5.0" maxValue="50.0" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">Extreme weather kills thousands of people every year. Some of these deaths are obvious, such as those killed by tornadoes and hurricanes. But people also die from abnormal flooding, high winds, snowstorms, lightning, heat waves, and starvation from drought. Other effects include increased incidence of tropical diseases such as the West Nile virus and greater problems with asthma.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.nrdc.org/media/2011/111108c.asp">health effects of climate change</a><br><br><br><br><br><br><br><br><a href="http://librarycat.blogstream.com/v1/p185.html">image</a><br/>]]></ReferenceText>
+		<Units>deaths</Units>
+		<Format>Integer</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="900" y="1550" color="black"/>
+	</Page>
+	<Page Title="Lung Disease Deaths">
+		<Level>3</Level>
+		<CausalFactor>Air Pollution</CausalFactor>
+		<Coefficient name="Toxicity of Air Pollution" initValue="2000.0" minValue="1500" maxValue="3000" units="deaths per billion tons"/>
+		<MainText><![CDATA[<p style="font-size:110%">Air pollution is full of nasty chemicals that are bad for any living thing, but they're especially harmful to our lungs, because lung tissue is wet. When sulfur dioxide from air pollution mixes with water in our lungs, it forms sulfuric acid. Sure, it's a teensy-weensy amount of sulfuric acid, but if you breathe that stuff day in and day out for years, the cumulative effect can be serious.</p>
+		<p style="font-size:110%">But sulfur dioxide isn't the only problem: there's also nitrous oxide, which forms nitric acid.</p>
+	<p style="font-size:110%">Then there are <i>heavy hydrocarbons</i>, a range of nasty compounds that smell vile in high concentrations but are too weak in air pollution to notice, so  you breathe them all day long. Imagine breathing turpentine all day long and you get the idea.</p>
+	<p style="font-size:110%">Let's not forget <i>particulates</i>. These are tiny bits of soot, so tiny you can't see them. Because they're so tiny, they easily penetrate deep inside the tiny passageways inside your lungs, where they can do the most damage.</p>
+	<p style="font-size:110%">The air pollution in some cities is so bad that just living there is like smoking a pack of cigarettes every day. In rich countries like the USA air pollution isn't dangerous in most places, most of the time. But in some countries it's quite serious. </p>
+	<p style="font-size:110%">The two biggest effects of this air pollution are lung cancer and emphysema. Roughly a million people die each year from air pollution. On top of this, air pollution has been shown to impede the healthy development of children.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.chinaairdaily.com">a website devoted to Chinese air pollution</a><br><a href="http://factsanddetails.com/china.php?itemid=392">lots of facts about air pollution in China</a><br><a href="http://articles.timesofindia.indiatimes.com/keyword/air-pollution">air pollution in India</a><br>
+		<a href="http://1.bp.blogspot.com/_IVdHf4hWXg0/S6hQ26sfzDI/AAAAAAAAABM/u7QL-gn_vWE/s1600/lung_cancer_0328.jpg">lung image</a><br/>]]></ReferenceText>
+		<Units>deaths</Units>
+		<Format>Integer</Format>
+		<InitialValue>1000000.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="275" y="1100" color="black"/>
+	</Page>
+	<Page Title="Extinction">
+		<Level>2</Level>
+		<CausalFactor>Acid Rain</CausalFactor>
+		<CausalFactor>Ocean Acidification</CausalFactor>
+		<CausalFactor>Rainforest Clearing</CausalFactor>
+		<Coefficient name="acid rain effect" initValue="300.0" minValue="15.0" maxValue="50.0" units="species per million tons"/>
+		<Coefficient name="ocean acidification effect" initValue="5000.0" minValue="2000.0" maxValue="10000.0" units="species per % acid"/>
+		<Coefficient name="rainforest biodiversity" initValue="0.5" minValue="0.2" maxValue="1" units="species per square mile"/>
+		<MainText><![CDATA[<p style="font-size:110%">Scientists have identified 8.7 million species of life on our planet, not counting bacteria, of which there are 1.4932 zillion. New species are being discovered every year. Mammals account for only 5,000 species – the same as the number of sawfly species. But we are also wiping out species at an alarming rate. Currently, we are wiping out species at something like 100 times the normal, natural rate of extinction. At current rates, perhaps half of all species will be extinct within 100 years.<br/><br/>The leading cause of extinction is rainforest clearing; the destruction of rain forests in the Amazon, Africa, and Indonesia is destroying the habitats of thousands of species, many of which have not yet even been scientifically registered. Ocean acidification is the next most serious cause of extinction; coral reefs provide an excellent environment for a highly diverse community of animals, but ocean acidification is killing large areas of coral. Acid rain also contributes to extinction, but nowhere near as much as these first two factors.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://en.wikipedia.org/wiki/Extinction">Wikipedia entry</a><br/><a href="http://www.amazon.com/Song-Dodo-Island-Biogeography-Extinction/dp/0684827123/ref=sr_1_24?s=books&ie=UTF8&qid=1317073415&sr=1-24">A great book on extinction</a><br/><a href="http://www.amazon.com/Endangered-Species-Natures-Treasures-Reading/dp/0881064882/ref=pd_sim_b3">a young person&rsquo;s book on extinction</a><br/><a href="http://extinctanimals.petermaas.nl/">a good website about extinction</a><br/><a href="http://en.wikipedia.org/wiki/IUCN_Red_List_of_extinct_species">a list of the species that we know we&rsquo;ve killed</a><br/><br/><br/><br/><br/><br/>IMAGES:<br/>		
+		<a href="http://akialoa.files.wordpress.com/2011/01/chioninia-coctei-bspcn.jpg?w=510&h=382">extinct lizard</a><br/><a href="http://www.itsnature.org/RIP/images/Steller%27s_Sea_Cow.jpg">Stellar&rsquo;s Sea Cow</a><br/><a href="http://akialoa.files.wordpress.com/2011/03/gallirallus-pacificus-bwg.jpg?w=300&h=400">red-billed extinct bird</a><br/><a href="http://akialoa.files.wordpress.com/2011/03/gallirallus-lafresnayanus-jlb.jpg?w=510&h=382">brown-gray extinct bird</a><br/><a href="http://upload.wikimedia.org/wikipedia/commons/e/e1/Dodo_1.JPG">Dodo</a><br/><a href="http://4.bp.blogspot.com/_F1dqcD30WTQ/Rlw9Y2ye5NI/AAAAAAAAABQ/a5M2_wPrcuU/s400/golden_toad.jpg">Golden Toad</a><br/><a href="http://akialoa.files.wordpress.com/2011/03/hybomorphus-melanosomus-wws-hj.jpg?w=300&h=400">extinct beetle</a><br/><a href="http://akialoa.files.wordpress.com/2011/01/leucadendron-grandiflorum-cbm.jpg?w=300&h=400">extinct plant on right</a><br/><a href="http://upload.wikimedia.org/wikipedia/commons/5/5e/Lipotes_vexillifer.png">extinct dolphin</a><br/><a href="http://upload.wikimedia.org/wikipedia/commons/f/fc/Nesiota_elliptica.jpg">extinct plant in center</a><br/><a href="http://akialoa.files.wordpress.com/2011/01/nesotocus-kauaiensis-fhaw.jpg?w=300&h=400">extinct bug</a><br/><a href="http://akialoa.files.wordpress.com/2011/06/urania-sloanus-wfk.jpg?w=300&h=225">extinct butterfly</a><br/><a href="http://akialoa.files.wordpress.com/2011/01/aegialomys-g-galapagoensis-jvw.jpg?w=510&h=382">extinct mouse</a><br/><a href="http://upload.wikimedia.org/wikipedia/commons/d/d3/Thylacinus_cynocephalus_2_Gould.jpg">extinct thylacine</a><br/><a href="http://upload.wikimedia.org/wikipedia/commons/5/5c/Lesserbilby.jpg">extinct billby (hint: rabbit ears)</a><br/>]]></ReferenceText>
+		<Units>species</Units>
+		<Format>Integer</Format>
+		<InitialValue>27000</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>true</Multicolor>
+		<PositiveGraph>true</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="600" y="1850" color="maroon"/>
+	</Page>
+	<Page Title="Quality of Life Score">
+		<Level>1</Level>
+		<CausalFactor>Economic Growth</CausalFactor>
+		<Coefficient name="Value of Economic Growth" initValue="10000.0" minValue="15000.0" maxValue="30000.0" units="points per %"/>
+		<MainText><![CDATA[<p style="font-size:110%">These are the points that you gain for making sure that people get the food, clothing, shelter, and computer games that they need to be happy.</p>
+		<p style="font-size:110%">This game uses just one factor to calculate the quality of life: economic growth. Of course, it also subtracts points for other things, such as the number of deaths due to environmental causes.</p>
+		<p style="font-size:110%">But scholars have developed complicated formulae to calculate the quality of life in different countries. Those formulae take into account lots of factors, such as health, job security, political freedom, climate, and gender equality. The problem with all such systems is that somebody has to specify exactly how important each of these factors is. In some countries, women aren't as concerned with gender equality as they are with getting food for their children. How much should the formula penalize Sweden for being too cold, or Brazil for being too hot?</p>
+		<p style="font-size:110%">There are no good answers to these questions.
+		]]></MainText>
+		<FormulaText><![CDATA[&nbsp &nbsp Food Production * <font color="Red">Value of Food Production</font><br>+ Industrial Production * <font color="Red">Value of Industrial Production</font><br>+ Economic Growth * <font color="Red">Value of Economic Growth</font>]]></FormulaText>
+		<ReferenceText><![CDATA[
+		<a href="http://www.economist.com/media/pdf/QUALITY_OF_LIFE.pdf">Quality of life scores from The Economist</a><br>
+		<a href="http://www.numbeo.com/quality-of-life/rankings_by_country.jsp">another quality of life index</a><br>
+		<a href="http://internationalliving.com/2010/02/quality-of-life-2010/">this quality of life index is customized for retired people</a><br>
+		<a href="http://www.oecdbetterlifeindex.org">a customizable quality of life index in which you set the preferences!</a><br><br><br><br><br><br><br>
+		<a href="http://www.me.ngb.army.mil/Family/Yellow%20Ribbon/Yellow%20Ribbon/YR%20media%20CD/Soldier-Family%20Images/happy%20family%203.jpg">rich family</a><br/><a href="http://www.matercare.org/projects/kenya-2/photos-from-kenya/album/kenya">poor family</a>]]></ReferenceText>
+		<Units>points</Units>
+		<Format>Integer</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>false</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="750" y="2000" color="tangerine"/>
+	</Page>
+	<Page Title="Poor Death Score">
+		<Level>3</Level>
+		<CausalFactor>Lung Disease Deaths</CausalFactor>
+		<CausalFactor>Malnutrition Deaths</CausalFactor>
+		<CausalFactor>Flood Deaths</CausalFactor>
+		<Coefficient name="Lung Disease Cost" initValue="0.01" minValue="0.005" maxValue="0.015" units="points per death"/>
+		<Coefficient name="Malnutrition Cost" initValue="0.01" minValue="0.005" maxValue="0.015" units="points per death"/>
+		<Coefficient name="Flood Cost" initValue="0.01" minValue="0.005" maxValue="0.015" units="points per death"/>
+		<MainText><![CDATA[<p style="font-size:110%">These are the points that are deducted from your total score because of deaths of people in less developed countries. Most of these deaths are due to malnutrition; for many poor people, getting enough to eat is more important to survival than living in a clean environment.</p>
+		<p style="font-size:110%">If you want to reduce your Poor Death Score, you must reduce the number of poor people dying. This will require you to reduce Lung Disease Deaths, Malnutrition Deaths, and Flood Deaths. Since Malnutrition Deaths will be the biggest of the three, you need to concentrate on that. What can you do to prevent malnutrition?</p>
+		<p style="font-size:110%">You lose 0.01 points for each of these deaths.</p>]]></MainText>
+		<FormulaText><![CDATA[<font color="Red">Value of a Poor Person&rsquo;s Life</font><br>&#09* (Water Pollution Deaths<br>&#09+ Malnutrition Deaths<br>&#09+ Flood Deaths)]]></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://www.gulfdailymail.com/wp-content/uploads/2011/03/libya-funeral-ajdabiyajpg-fcb3398bf9a54878.jpg">funeral</a><br/>]]></ReferenceText>
+		<Units>points</Units>
+		<Format>Integer</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>true</Multicolor>
+		<PositiveGraph>false</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="300" y="2000" color="sky"/>
+	</Page>
+	<Page Title="Rich Death Score">
+		<Level>2</Level>
+		<CausalFactor>Extreme Weather Deaths</CausalFactor>
+		<CausalFactor>Radiation Cancer Deaths</CausalFactor>
+		<Coefficient name="Extreme Weather Cost" initValue="1" minValue="0.1" maxValue="1" units="points per death"/>
+		<Coefficient name="Radiation Cancer Cost" initValue="1" minValue="0.1" maxValue="1" units="points per death"/>
+		<MainText><![CDATA[<p style="font-size:110%">These are the points that are deducted from your total score because of deaths in the rich world arising from your policies.</p>
+		<p style="font-size:110%">You lose 1 point for each of these deaths. By contrast, you lose only 0.01 points for each death in the poor world. In other words, in this game, rich world people are a hundred times more important that poor world people. This reflects the actual spending policies used in the USA. For example, the Environmental Protection Agency calculates that the value of one human life is $9 million. Thus, if a factory could spend $9 million on pollution control and thereby reduce its pollution by enough to save one life, then the EPA considers that to be a good use of money.</p>
+		<p style="font-size:110%">On the other hand, the USA spends a maximum of $3000 to save the life of one poor world person. Divide $9 million by $3,000 and you get the ratio of how we value different lives: 3,000. In other words, the US government considers the life of an American to be worth 3,000 times as much as the life of a poor world person.</p>
+		<p style="font-size:110%">For this game, however, I decided to use the much lower figure of 100 for the ratio of the value of a human life. I did this to emphasize the importance of the needs of poor world people. Perhaps I was unfair; perhaps I should have used a different number. If I get the opportunity to make a better version of this game, I'll give YOU the opportunity to decide what that numbers should be.
+		]]></MainText>
+		<FormulaText><![CDATA[<font color="Red">Value of a Rich Person&rsquo;s Life</font><br>&#09*(&#09+ Extreme Weather Deaths<br>&#09+ Radiation Cancer Deaths)<br>]]></FormulaText>
+		<ReferenceText><![CDATA[
+		<a href="http://www.time.com/time/health/article/0,8599,1808049,00.html">A human life is worth $50,000</a><br>
+		<a href="http://www.care2.com/causes/epa-puts-the-value-of-human-life-at-9-1-million-fda-says-7-9-million.html">A human life is worth $9 million</a><br>
+		<a href="http://complianceandsafety.com/blog/infographic-the-monetary-value-of-a-human-life/">a great collection of facts about money and life</a><br>
+		<a href="http://www.npr.org/templates/story/story.php?storyId=90760725">How do we decide different values for different people?</a><br><br><br><br><br><br><br><br>
+		<a href="http://www.funeraldirectoryusa.com/wp-content/uploads/2011/10/funeral.jpg">funeral picture</a><br/>]]></ReferenceText>
+		<Units>points</Units>
+		<Format>Integer</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>true</Multicolor>
+		<PositiveGraph>false</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="450" y="2000" color="bubblegum"/>
+	</Page>
+	<Page Title="Gaia Score">
+		<Level>2</Level>
+		<CausalFactor>Extinction</CausalFactor>
+		<CausalFactor>Healthy Wetlands</CausalFactor>
+		<CausalFactor>Temperate Forest Land</CausalFactor>
+		<CausalFactor>Rainforest Land</CausalFactor>
+		<Coefficient name="Value of One Extinction" initValue="-1" minValue="-8" maxValue="-1" units="points per species"/>
+		<Coefficient name="Value of Healthy Wetlands" initValue="2000" minValue="-8" maxValue="-1" units="points per square mile"/>
+		<Coefficient name="Value of Temperate Forest Land" initValue="2000" minValue="-8" maxValue="-1" units="points per square mile"/>
+		<Coefficient name="Value of Rainforest Land" initValue="2000" minValue="-8" maxValue="-1" units="points per square mile"/>
+		<MainText><![CDATA[<p style="font-size:110%">In Greek mythology, Gaia was the goddess of the Earth and the mother of every living creature. Your Gaia score represents a range of effects of environmental damage. We know how some of our activities are causing damage to the environment, but what about the effects that we don&rsquo;t know yet? We could be unwittingly creating new environmental problems for future generations. Your Gaia score, therefore, is an underestimate of the actual amount of long-term environmental damage you are creating.</p>
+		<p style="font-size:110%">There are also important aesthetic factors to consider; most people derive spiritual and emotional inspiration from the beauty of nature, and find the ugliness of ruined landscapes and polluted water to be depressing and offensive.</p>
+		<p style="font-size:110%">The benefits of a healthy environment are not just emotional; scientists are learning that green natural environments promote human health. Green landscapes aren’t just nice to look at: it is important to our overall health to experience such places.</p>
+		<p style="font-size:110%">Don’t get confused by the existence of something called the  <a href="Gaia Hypothesis">Gaia Hypothesis</a>. That’s a controversial theory that the earth as a whole forms a single symbiotic system.</p>]]></MainText>
+		<FormulaText><![CDATA[Extinction * <font color="Red">Value of Biodiversity</font>]]></FormulaText>
+		<ReferenceText><![CDATA[
+		<a href="http://www.eastshorepark.org/HealthBenefitsReport_FINAL_010307.pdf">The Health Benefits of Parks</a><br/>
+		<a href="http://lhhl.illinois.edu/">a research laboratory about landscape and health</a><br/>
+		<a href="http://projectevergreen.com/why-green-matters/lifestyle-benefits/">more information on the psychological benefits of green landscapes</a><br/>
+		<a href="http://suite101.com/article/mental-health-benefits-from-nature-a54608">another article on the psychological benefits of nature</a><br/>
+		<a href="http://www.boston.com/bostonglobe/ideas/articles/2009/01/04/how_the_city_hurts_your_brain/">How The City Hurts Your Brain</a><br/>
+		]]></ReferenceText>
+		<Units>points</Units>
+		<Format>Integer</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>-1000.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>true</Multicolor>
+		<PositiveGraph>false</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="600" y="2000" color="seafoam"/>
+	</Page>
+	<Page Title="Annual Score">
+		<Level>1</Level>
+		<CausalFactor>Quality of Life Score</CausalFactor>
+		<CausalFactor>Rich Death Score</CausalFactor>
+		<CausalFactor>Poor Death Score</CausalFactor>
+		<CausalFactor>Gaia Score</CausalFactor>
+		<Coefficient name="A" initValue="1.0" minValue="1.0" maxValue="1.0" units=" "/>
+		<Coefficient name="B" initValue="1.0" minValue="1.0" maxValue="1.0" units=" "/>
+		<Coefficient name="C" initValue="1.0" minValue="1.0" maxValue="1.0" units=" "/>
+		<Coefficient name="D" initValue="1.0" minValue="1.0" maxValue="1.0" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">This is the sum of your four scores for each year. It represents how well you&rsquo;re doing in terms of handling the enormous problems that humanity faces. It is only the score for a single year; your final score is the sum of all the annual scores for all the years in the game.</p>]]></MainText>
+		<FormulaText><![CDATA[Quality of Life Score<br>+ Rich Death Score<br>+ Poor Death Score<br>+ Gaia Score]]></FormulaText>
+		<ReferenceText><![CDATA[<a href="http://2.bp.blogspot.com/_47mDU4vB2hk/S7YlsUtcLRI/AAAAAAAAAP8/giQXGFkYuIg/s1600/fireworks.jpg">fireworks image</a><br/><a href="http://titanicsunk.blogspot.com/">Titanic image</a>]]></ReferenceText>
+		<Units>points</Units>
+		<Format>Integer</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>true</Multicolor>
+		<PositiveGraph>false</PositiveGraph>
+		<ValueDisplayed>Normal</ValueDisplayed>
+		<Location x="600" y="2100" color="aqua"/>
+	</Page>
+	<Page Title="Total Score">
+		<Level>1</Level>
+		<CausalFactor>Annual Score</CausalFactor>
+		<Coefficient name="" initValue="1.0" minValue="0.0" maxValue="1.0" units=" "/>
+		<MainText><![CDATA[<p style="font-size:110%">This is the total of all your annual scores. You are responsible for the happiness of all the people living during the period of your leadership. Thus, a bad year can be compensated for by a good year; you have to consider the effects of your decisions on everybody during every year.</p>]]></MainText>
+		<FormulaText></FormulaText>
+		<ReferenceText><![CDATA[]]></ReferenceText>
+		<Units>points</Units>
+		<Format>Integer</Format>
+		<InitialValue>0.0</InitialValue>
+		<MinimumValue>0.0</MinimumValue>
+		<MaximumValue>0.0</MaximumValue>
+		<Multicolor>false</Multicolor>
+		<PositiveGraph>false</PositiveGraph>
+		<ValueDisplayed>None</ValueDisplayed>
+		<Location x="600" y="2200" color="blueberry"/>
+	</Page>
+</PageList>
