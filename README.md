@@ -36,8 +36,8 @@ https://www.erasmatazz.com/library/source-code/index.html
 
 * original branch: unmodified Java source code bundled in an Eclipse project (build using JDK1.8 but more recent should work)
 * main branch: 
- * reworked version to include all resource in a single jar file
- * docs directory: contains executable resuling jar file and index.html that uses cheerPJ ( https://cheerpj.com/ ) which is the modern way to run Java inside a browser
+    * reworked version to include all resource in a single jar file
+    * docs directory: contains executable resuling jar file and index.html that uses cheerPJ ( https://cheerpj.com/ ) which is the modern way to run Java inside a browser
 
 ## Trying online (proof-of-concept)
 
