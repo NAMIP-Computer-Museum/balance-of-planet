@@ -9,9 +9,8 @@
   <script>
     (async function () {
       await cheerpjInit();
-      await cheerpjFetchResource("BOTP-RES.jar");     // 👈 force CheerpJ to load it properly
       cheerpjCreateDisplay(1024, 768);                // optional for GUI apps
-      await cheerpjRunJar("BOTP-RES.jar");
+      await cheerpjRunJar("BOTP-RES.jar","balancePlanet.Globals");
     })();
   </script>
 </body>
